@@ -127,8 +127,8 @@ html, body {
 
 /* Подвал сайта */
 .site-footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #fff;
+    color: #000000;
     padding: 40px 20px 10px 20px;
     font-size: 14px;
 }
@@ -144,7 +144,7 @@ html, body {
 
     .footer-content h3,
     .footer-content h4 {
-        color: #ff6a00;
+        color: #000000;
         margin-bottom: 10px;
     }
 
@@ -165,13 +165,13 @@ html, body {
         }
 
             .footer-menu ul li a {
-                color: #fff;
+                color: #000000;
                 text-decoration: none;
                 transition: 0.3s;
             }
 
                 .footer-menu ul li a:hover {
-                    color: #ff6a00;
+                    color: #ffa500;
                 }
 
     .footer-right p {

@@ -1,4 +1,5 @@
 wwwroot\css\login_and_registration.css
+wwwroot\css\shared.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\image\1.jpg
@@ -70,4 +71,3 @@ wwwroot\lib\jquery\dist\jquery.min.js
 wwwroot\lib\jquery\dist\jquery.min.map
 wwwroot\lib\jquery\LICENSE.txt
 wwwroot\css\home.css
-wwwroot\css\shared.css

@@ -211,3 +211,24 @@
         background-color: #ffa04d;
         transform: scale(1.05);
     }
+
+    /*О нас*/
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрирует содержимое по горизонтали */
+    justify-content: center; /* Центрирует по вертикали, если нужно */
+    text-align: center; /* Центрирует текст внутри */
+    padding: 60px 20px; /* Отступы сверху/снизу и по бокам */
+}
+
+    .about-section h1 {
+        margin-bottom: 20px;
+        font-size: 36px;
+    }
+
+    .about-section p {
+        max-width: 700px; /* Ограничивает ширину текста */
+        line-height: 1.6;
+    }
+
