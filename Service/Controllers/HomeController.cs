@@ -1,5 +1,7 @@
-using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Service.Domain.ViewModels.LoginAndRegistration;
+using System.Diagnostics;
+using System.Reflection;
 
 namespace Service.Controllers
 {
@@ -9,5 +11,11 @@ namespace Service.Controllers
         public IActionResult SiteInformation() => View();
         public IActionResult Functions() => View();
         public IActionResult Contacts() => View();
+
+        [HttpPost]
+        public ActionResult Login([FromBody] LoginViewModel model)
+        {
+            return Ok(model);
+        }
     }
 }

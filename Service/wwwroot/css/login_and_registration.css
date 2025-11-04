@@ -122,3 +122,12 @@
         .switch-form a:hover {
             text-decoration: underline;
         }
+
+
+
+
+.error {
+    color: red;
+    margin-top: 5px;
+    font-size: 14px;
+}

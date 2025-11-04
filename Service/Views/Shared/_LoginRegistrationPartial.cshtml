@@ -35,5 +35,24 @@
             <button type="submit" class="btn">Зарегистрироваться</button>
             <p class="switch-form">Уже есть аккаунт? <a href="#" id="show-login">Войти</a></p>
         </form>
+        @*  Форма входа *@
+        <form id="form_signin">
+    <input type="email" id="loginEmail" placeholder="Email">
+    <input type="password" id="loginPassword" placeholder="Пароль">
+    <button type="button" id="loginButton">Войти</button>
+    <div id="error-messages-signin"></div>
+    </form>
+    @*   Форма регестрации *@
+        <form id="form_signup">
+            <input type="text" id="name" placeholder="Имя">
+            <input type="email" id="reg-email" placeholder="Email">
+            <input type="password" id="reg-password" placeholder="Пароль">
+            <input type="password" id="confirm-password" placeholder="Подтвердите пароль">
+            <button type="button" id="btn-register">Зарегистрироваться</button>
+        </form>
+
+        <div id="error-messages-signup"></div>
+
+
     </div>
 </div>

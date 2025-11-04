@@ -10,4 +10,8 @@
     <Folder Include="wwwroot\image\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Service.Domain\Service.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

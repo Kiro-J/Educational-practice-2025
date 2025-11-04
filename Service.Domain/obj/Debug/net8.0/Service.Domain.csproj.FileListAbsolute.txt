@@ -1,0 +1,12 @@
+D:\Охлоповский 315\Educational-practice-2025\Educational-practice-2025\Service.Domain\bin\Debug\net8.0\Service.Domain.deps.json
+D:\Охлоповский 315\Educational-practice-2025\Educational-practice-2025\Service.Domain\bin\Debug\net8.0\Service.Domain.dll
+D:\Охлоповский 315\Educational-practice-2025\Educational-practice-2025\Service.Domain\bin\Debug\net8.0\Service.Domain.pdb
+D:\Охлоповский 315\Educational-practice-2025\Educational-practice-2025\Service.Domain\obj\Debug\net8.0\Service.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Охлоповский 315\Educational-practice-2025\Educational-practice-2025\Service.Domain\obj\Debug\net8.0\Service.Domain.AssemblyInfoInputs.cache
+D:\Охлоповский 315\Educational-practice-2025\Educational-practice-2025\Service.Domain\obj\Debug\net8.0\Service.Domain.AssemblyInfo.cs
+D:\Охлоповский 315\Educational-practice-2025\Educational-practice-2025\Service.Domain\obj\Debug\net8.0\Service.Domain.csproj.CoreCompileInputs.cache
+D:\Охлоповский 315\Educational-practice-2025\Educational-practice-2025\Service.Domain\obj\Debug\net8.0\Service.Domain.sourcelink.json
+D:\Охлоповский 315\Educational-practice-2025\Educational-practice-2025\Service.Domain\obj\Debug\net8.0\Service.Domain.dll
+D:\Охлоповский 315\Educational-practice-2025\Educational-practice-2025\Service.Domain\obj\Debug\net8.0\refint\Service.Domain.dll
+D:\Охлоповский 315\Educational-practice-2025\Educational-practice-2025\Service.Domain\obj\Debug\net8.0\Service.Domain.pdb
+D:\Охлоповский 315\Educational-practice-2025\Educational-practice-2025\Service.Domain\obj\Debug\net8.0\ref\Service.Domain.dll
