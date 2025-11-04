@@ -131,3 +131,42 @@
     margin-top: 5px;
     font-size: 14px;
 }
+
+
+
+.auth-section {
+    width: 300px;
+    margin: 20px auto;
+}
+
+.auth-title {
+    color: orange;
+    text-align: center;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+}
+
+    .auth-form .input-field {
+        margin: 5px 0;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+.btn-orange {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.auth-login-text, .auth-register-text {
+    text-align: center;
+    margin-top: 10px;
+}
