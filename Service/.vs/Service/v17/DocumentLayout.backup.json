@@ -66,8 +66,7 @@
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-03T12:31:17.938Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-03T12:31:17.938Z"
             },
             {
               "$type": "Document",
@@ -79,8 +78,7 @@
               "RelativeToolTip": "Views\\Home\\SiteInformation.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-03T13:08:05.729Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-03T13:08:05.729Z"
             },
             {
               "$type": "Document",
@@ -90,7 +88,7 @@
               "RelativeDocumentMoniker": "wwwroot\\css\\home.css",
               "ToolTip": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Educational-practice-2025\\Service\\wwwroot\\css\\home.css",
               "RelativeToolTip": "wwwroot\\css\\home.css",
-              "ViewState": "AgIAAIEAAAAAAAAAAAAAAN8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAN8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-11-04T09:12:40.448Z",
               "EditorCaption": ""
@@ -105,8 +103,7 @@
               "RelativeToolTip": "wwwroot\\css\\shared.css",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAK0AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-11-03T12:39:21.543Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-03T12:39:21.543Z"
             },
             {
               "$type": "Document",
@@ -118,8 +115,7 @@
               "RelativeToolTip": "wwwroot\\css\\login_and_registration.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-11-04T10:29:27.71Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T10:29:27.71Z"
             },
             {
               "$type": "Document",
@@ -131,8 +127,7 @@
               "RelativeToolTip": "wwwroot\\js\\login_and_registration_script.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-11-04T10:30:28.503Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T10:30:28.503Z"
             },
             {
               "$type": "Document",
@@ -144,8 +139,7 @@
               "RelativeToolTip": "Views\\Shared\\_LoginRegistrationPartial.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-04T10:23:04.381Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T10:23:04.381Z"
             },
             {
               "$type": "Document",
@@ -181,8 +175,7 @@
               "RelativeToolTip": "wwwroot\\js\\home_script.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-11-04T09:13:42.186Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T09:13:42.186Z"
             },
             {
               "$type": "Document",
@@ -194,8 +187,7 @@
               "RelativeToolTip": "wwwroot\\js\\shared_script.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-11-03T12:59:48.249Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-03T12:59:48.249Z"
             }
           ]
         },
