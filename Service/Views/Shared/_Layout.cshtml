@@ -1,63 +1,81 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Service</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <title>@ViewData["Title"] - InventorySystem</title>
+
     <link rel="stylesheet" href="~/css/shared.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Service.styles.css" asp-append-version="true" />
 </head>
-    <body>
-
-        <div id="header-top">
-
-            <div class="logo">Склад ПМР</div>
-
-            <div class="button-header">
-
-                <button class="button">Войти</button>
-
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="logo">Inventory System</div>
+            <div class="auth-buttons">
+                <a href="#" id="click-to-show" class="btn-login">Войти</a>
             </div>
 
         </div>
 
-        <img class="img-header" src="~/image/1.jpg" />
-
-        <div id="header-bottom">
-
-            <div class="menu">
-
-                <ul>
-
-                    <li><a href="#home">Главная</a></li>
-
-                    <li><a href="#contact">Контакты</a></li>
-
-                    <li><a href="#locations">Локации</a></li>
-
-                    <li><a href="#support">Поддержка</a></li>
-
-                </ul>
-
-            </div>
-
+        <div class="header-middle">
+            <img src="~/image/1.jpg" alt="Warehouse" class="header-image" />
         </div>
-    
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+
+        <nav class="header-bottom">
+            <ul class="menu">
+                <li><a asp-controller="Home" asp-action="Index">Главная</a></li>
+                <li><a asp-controller="Home" asp-action="SiteInformation">О нас</a></li>
+                <li><a asp-controller="Home" asp-action="Functions">Функции</a></li>
+                <li><a asp-controller="Home" asp-action="Contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="body-container">
+        @RenderBody()
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - Service - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <script src="~/js/shared_script.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+
+    @await Html.PartialAsync("_LoginRegistrationPartial")
+
+    <script src="~/js/login_and_registration_script.js" asp-append-version="true"></script>
+    <link rel="stylesheet" href="~/css/login_and_registration.css" asp-append-version="true" />
+
+
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3>Inventory System</h3>
+                <p>
+                    Система учёта оборудования и инвентаря на складе.
+                    Автоматизация и контроль на всех этапах.
+                </p>
+            </div>
+
+            <div class="footer-menu">
+                <h4>Меню</h4>
+                <ul>
+                    <li><a asp-controller="Home" asp-action="Index">Главная</a></li>
+                    <li><a asp-controller="Home" asp-action="SiteInformation">О нас</a></li>
+                    <li><a asp-controller="Home" asp-action="Functions">Функции</a></li>
+                    <li><a asp-controller="Home" asp-action="Contacts">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-right">
+                <h4>Контакты</h4>
+                <p>Email: info@inventory-system.com</p>
+                <p>Телефон: +373 (777) 77-777</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Inventory System — все права защищены.</p>
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/shared_script.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+
 </body>
 </html>

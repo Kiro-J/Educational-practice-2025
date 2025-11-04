@@ -5,22 +5,9 @@ namespace Service.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-
-        public IActionResult Index()
-        {
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
+        public IActionResult Index() => View();
+        public IActionResult SiteInformation() => View();
+        public IActionResult Functions() => View();
+        public IActionResult Contacts() => View();
     }
 }
