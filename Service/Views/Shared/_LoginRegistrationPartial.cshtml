@@ -1,18 +1,21 @@
 ﻿<div class="overlay" id="overlay"></div>
 
 <div class="form-container" id="form-container">
+    @Html.AntiForgeryToken()
+
     <div class="form-box login">
         <h2>Войти</h2>
         <form>
             <div class="input-box">
-                <input type="text" required>
-                <label>Логин</label>
+                <input type="email" id="loginEmail" required>
+                <label for="loginEmail">Email</label>
             </div>
             <div class="input-box">
-                <input type="password" required>
-                <label>Пароль</label>
+                <input type="password" id="loginPassword" required>
+                <label for="loginPassword">Пароль</label>
             </div>
             <button type="submit" class="btn">Войти</button>
+            <div id="error-messages-signin"></div>
             <p class="switch-form">Нет аккаунта? <a href="#" id="show-register">Зарегистрироваться</a></p>
         </form>
     </div>
@@ -21,28 +24,25 @@
         <h2>Регистрация</h2>
         <form>
             <div class="input-box">
-                <input type="text" required>
-                <label>Имя пользователя</label>
+                <input type="text" id="registerUsername" required>
+                <label for="registerUsername">Имя пользователя</label>
             </div>
             <div class="input-box">
-                <input type="email" required>
-                <label>Email</label>
+                <input type="email" id="registerEmail" required>
+                <label for="registerEmail">Email</label>
             </div>
             <div class="input-box">
-                <input type="password" required>
-                <label>Пароль</label>
+                <input type="password" id="registerPassword" required>
+                <label for="registerPassword">Пароль</label>
             </div>
             <div class="input-box">
-                <input type="password" required>
-                <label>Повторите пароль</label>
+                <input type="password" id="registerConfirmPassword" required>
+                <label for="registerConfirmPassword">Повторите пароль</label>
             </div>
             <button type="submit" class="btn">Зарегистрироваться</button>
+            <div id="error-messages-signup"></div>
             <p class="switch-form">Уже есть аккаунт? <a href="#" id="show-login">Войти</a></p>
         </form>
-      
-
-        <div id="error-messages-signup"></div>
-
-
     </div>
 </div>
+

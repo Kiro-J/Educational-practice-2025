@@ -1,18 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations;
-using Service.Domain;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Service.Domain.ViewModels.LoginAndRegistration
 {
     public class LoginViewModel
     {
+        [Required(ErrorMessage = "Email обязателен")]
+        [EmailAddress(ErrorMessage = "Неверный формат email")]
+        [Display(Name = "Email")]
         public string Email { get; set; }
+
+        [Required(ErrorMessage = "Пароль обязателен")]
+        [DataType(DataType.Password)]
+        [Display(Name = "Пароль")]
         public string Password { get; set; }
     }
-
 }

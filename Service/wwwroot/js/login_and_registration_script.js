@@ -5,43 +5,64 @@ const showRegister = document.getElementById('show-register');
 const showLogin = document.getElementById('show-login');
 
 // Открыть форму
-loginBtn.addEventListener('click', () => {
-    overlay.classList.add('active');
-    formContainer.classList.add('active');
-});
+if (loginBtn) {
+    loginBtn.addEventListener('click', () => {
+        overlay.classList.add('active');
+        formContainer.classList.add('active');
+    });
+}
 
 // Закрыть форму при клике вне
-overlay.addEventListener('click', () => {
+if (overlay) {
+    overlay.addEventListener('click', () => {
+        closeForm();
+    });
+}
+
+// Переключение между входом и регистрацией
+if (showRegister) {
+    showRegister.addEventListener('click', (e) => {
+        e.preventDefault();
+        formContainer.classList.add('show-register');
+        clearErrors();
+    });
+}
+
+if (showLogin) {
+    showLogin.addEventListener('click', (e) => {
+        e.preventDefault();
+        formContainer.classList.remove('show-register');
+        clearErrors();
+    });
+}
+
+function closeForm() {
     overlay.classList.remove('active');
     formContainer.classList.remove('active');
     formContainer.classList.remove('show-register');
-});
-
-// Переключение между входом и регистрацией
-showRegister.addEventListener('click', (e) => {
-    e.preventDefault();
-    formContainer.classList.add('show-register');
-});
-
-showLogin.addEventListener('click', (e) => {
-    e.preventDefault();
-    formContainer.classList.remove('show-register');
-});
-
-
-
+    clearErrors();
+}
 
 async function sendRequest(url, data) {
-    let response = await fetch(url, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json;charset=utf-8' },
-        body: JSON.stringify(data)
-    });
-    return await response.json();
+    try {
+        let response = await fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json;charset=utf-8',
+                'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
+            },
+            body: JSON.stringify(data)
+        });
+        return await response.json();
+    } catch (error) {
+        return { success: false, errors: ['Ошибка сети'] };
+    }
 }
 
 function displayErrors(errors, containerId) {
     const container = document.getElementById(containerId);
+    if (!container) return;
+
     container.innerHTML = '';
     errors.forEach(err => {
         const div = document.createElement('div');
@@ -51,69 +72,72 @@ function displayErrors(errors, containerId) {
     });
 }
 
-function cleaningAndClosingForm(formId) {
-    const form = document.getElementById(formId);
-    form.reset();
-    location.reload();
+function clearErrors() {
+    const errorContainers = document.querySelectorAll('[id^="error-messages-"]');
+    errorContainers.forEach(container => {
+        container.innerHTML = '';
+    });
 }
 
-// Обработчик кнопки Login
-document.getElementById('loginButton').addEventListener('click', async () => {
-    const data = {
-        Email: document.getElementById('loginEmail').value,
-        Password: document.getElementById('loginPassword').value
-    };
+function cleaningAndClosingForm() {
+    const forms = document.querySelectorAll('form');
+    forms.forEach(form => form.reset());
+    closeForm();
+}
 
-    const result = await sendRequest('/Account/Login', data);
+// Обработчик формы входа
+document.addEventListener('DOMContentLoaded', function () {
+    const loginForm = document.querySelector('.form-box.login form');
+    if (loginForm) {
+        loginForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
 
-    if (!result.success) {
-        displayErrors(result.errors, 'error-messages-signin');
-    } else {
-        cleaningAndClosingForm('form_signin');
+            const data = {
+                Email: document.querySelector('#form-container .login input[type="email"]')?.value ||
+                    document.querySelector('#form-container .login input[type="text"]')?.value,
+                Password: document.querySelector('#form-container .login input[type="password"]')?.value
+            };
+
+            const result = await sendRequest('/Account/Login', data);
+
+            if (!result.success) {
+                displayErrors(result.errors, 'error-messages-signin');
+            } else {
+                if (result.redirectUrl) {
+                    window.location.href = result.redirectUrl;
+                } else {
+                    cleaningAndClosingForm();
+                    location.reload();
+                }
+            }
+        });
     }
-});
 
-// Обработчик кнопки Register
-document.getElementById('registerButton').addEventListener('click', async () => {
-    const data = {
-        FirstName: document.getElementById('registerFirstName').value,
-        LastName: document.getElementById('registerLastName').value,
-        Email: document.getElementById('registerEmail').value,
-        Password: document.getElementById('registerPassword').value,
-        ConfirmPassword: document.getElementById('registerConfirmPassword').value
-    };
+    // Обработчик формы регистрации
+    const registerForm = document.querySelector('.form-box.register form');
+    if (registerForm) {
+        registerForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
 
-    const result = await sendRequest('/Account/Register', data);
+            const data = {
+                Username: document.querySelector('#form-container .register input[type="text"]')?.value,
+                Email: document.querySelector('#form-container .register input[type="email"]')?.value,
+                Password: document.querySelectorAll('#form-container .register input[type="password"]')[0]?.value,
+                ConfirmPassword: document.querySelectorAll('#form-container .register input[type="password"]')[1]?.value
+            };
 
-    if (!result.success) {
-        displayErrors(result.errors, 'error-messages-signup');
-    } else {
-        cleaningAndClosingForm('form_signup');
-    }
-});
+            const result = await sendRequest('/Account/Register', data);
 
-
-
-document.getElementById('btn-register').addEventListener('click', async () => {
-    const data = {
-        Name: document.getElementById('name').value,
-        Email: document.getElementById('reg-email').value,
-        Password: document.getElementById('reg-password').value,
-        ConfirmPassword: document.getElementById('confirm-password').value
-    };
-
-    let response = await fetch('/Account/Register', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json;charset=utf-8' },
-        body: JSON.stringify(data)
-    });
-
-    let result = await response.json();
-
-    if (!result.success) {
-        displayErrors('error-messages-signup', result.errors);
-    } else {
-        alert(result.message);
-        location.reload();
+            if (!result.success) {
+                displayErrors(result.errors, 'error-messages-signup');
+            } else {
+                cleaningAndClosingForm();
+                if (result.message) {
+                    alert(result.message);
+                }
+                // Переключаем на форму входа после успешной регистрации
+                formContainer.classList.remove('show-register');
+            }
+        });
     }
 });

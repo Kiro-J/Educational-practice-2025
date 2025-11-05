@@ -12,17 +12,29 @@ public class AccountController : Controller
     }
 
     [HttpPost]
-    public IActionResult Register(RegisterViewModel model)
+    public async Task<JsonResult> Register([FromBody] RegisterViewModel model)
     {
         if (ModelState.IsValid)
         {
-            // Логика регистрации
-            return RedirectToAction("Login");
+            try
+            {
+                // Логика регистрации
+                // await _userService.RegisterAsync(model);
+
+                return Json(new { success = true, message = "Регистрация успешна!" });
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, errors = new[] { ex.Message } });
+            }
         }
 
-        // В случае ошибки возвращаем форму с ошибками
-        return View(model);
-    
+        var errors = ModelState.Values
+            .SelectMany(v => v.Errors)
+            .Select(e => e.ErrorMessage)
+            .ToArray();
+
+        return Json(new { success = false, errors = errors });
     }
 
     // Вход
@@ -33,13 +45,31 @@ public class AccountController : Controller
     }
 
     [HttpPost]
-    public IActionResult Login(LoginViewModel model)
+    public async Task<JsonResult> Login([FromBody] LoginViewModel model)
     {
         if (ModelState.IsValid)
         {
-            // Логика входа
-            return RedirectToAction("Index", "Home");
+            try
+            {
+                // Логика входа
+                // var result = await _signInManager.PasswordSignInAsync(...);
+
+                // if (result.Succeeded)
+                return Json(new { success = true, message = "Вход выполнен успешно!", redirectUrl = Url.Action("Index", "Home") });
+                // else
+                // return Json(new { success = false, errors = new[] { "Неверный email или пароль" } });
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, errors = new[] { ex.Message } });
+            }
         }
-        return View(model);
+
+        var errors = ModelState.Values
+            .SelectMany(v => v.Errors)
+            .Select(e => e.ErrorMessage)
+            .ToArray();
+
+        return Json(new { success = false, errors = errors });
     }
 }
