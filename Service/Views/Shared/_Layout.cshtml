@@ -5,16 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - InventorySystem</title>
 
+    <!-- ПОДКЛЮЧАЕМ Home.css ПЕРВЫМ -->
+    <link rel="stylesheet" href="~/css/Home.css" asp-append-version="true" />
+    <!-- ПОДКЛЮЧАЕМ shared.css ПОСЛЕ Home.css -->
     <link rel="stylesheet" href="~/css/shared.css" asp-append-version="true" />
 </head>
 <body>
     <header class="header">
         <div class="header-top">
             <div class="logo">Inventory System</div>
+
+            <!-- ГАМБУРГЕР ДЛЯ МОБИЛЬНЫХ -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
             <div class="auth-buttons">
                 <a href="#" id="click-to-show" class="btn-login">Войти</a>
             </div>
+        </div>
 
+        <!-- БОКОВОЕ МЕНЮ ДЛЯ МОБИЛЬНЫХ -->
+        <div class="side-menu" id="sideMenu">
+            <button class="close-btn" id="closeMenu">×</button>
+            <nav class="mobile-nav">
+                <a asp-controller="Home" asp-action="Index">Главная</a>
+                <a asp-controller="Home" asp-action="SiteInformation">О нас</a>
+                <a asp-controller="Home" asp-action="Functions">Функции</a>
+                <a asp-controller="Home" asp-action="Contacts">Контакты</a>
+                <a href="#" id="mobile-login-btn" class="btn-login mobile-login">Войти</a>
+            </nav>
         </div>
 
         <div class="header-middle">
@@ -43,16 +65,11 @@
     <script src="~/js/login_and_registration_script.js" asp-append-version="true"></script>
     <link rel="stylesheet" href="~/css/login_and_registration.css" asp-append-version="true" />
 
-
-
     <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-left">
                 <h3>Inventory System</h3>
-                <p>
-                    Система учёта оборудования и инвентаря на складе.
-                    Автоматизация и контроль на всех этапах.
-                </p>
+                <p>Система учёта оборудования и инвентаря на складе. Автоматизация и контроль на всех этапах.</p>
             </div>
 
             <div class="footer-menu">
@@ -77,10 +94,13 @@
         </div>
     </footer>
 
-
     <script src="~/lib/jquery/jquery.min.js"></script>
     <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
     <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+
+
+
 
 </body>
 </html>

@@ -65,31 +65,113 @@
 /* СТРЕЛОЧКИ */
 .arrow {
     position: absolute;
-    top: 45%;
-    font-size: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
     color: #ff8c00;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.95);
     border-radius: 50%;
     width: 50px;
     height: 50px;
     line-height: 50px;
     text-align: center;
     cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    transition: background 0.3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+    border: 2px solid #ff8c00;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
 }
 
     .arrow:hover {
         background: orange;
         color: #fff;
+        transform: translateY(-50%) scale(1.1);
+        box-shadow: 0 6px 16px rgba(0,0,0,0.2);
     }
 
     .arrow.left {
-        left: -10px;
+        left: 20px;
     }
 
     .arrow.right {
-        right: -10px;
+        right: 20px;
+    }
+
+/* Для мобильных устройств - увеличиваем область нажатия */
+@media (max-width: 768px) {
+    .arrow {
+        width: 44px;
+        height: 44px;
+        line-height: 44px;
+        font-size: 20px;
+    }
+
+        .arrow.left {
+            left: 10px;
+        }
+
+        .arrow.right {
+            right: 10px;
+        }
+}
+
+/* Для очень маленьких экранов - делаем стрелки меньше */
+@media (max-width: 480px) {
+    .arrow {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 18px;
+    }
+
+        .arrow.left {
+            left: 5px;
+        }
+
+        .arrow.right {
+            right: 5px;
+        }
+}
+
+/* Дополнительные стили для контейнера со стрелками */
+.services-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 60px; /* Добавляем отступы по бокам для стрелок */
+}
+
+/* Убираем стандартные стрелки у скролла */
+.cards-wrapper {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    padding: 10px 0;
+    scroll-padding: 0 20px;
+}
+
+    .cards-wrapper::-webkit-scrollbar {
+        display: none;
+    }
+
+/* Прячем стрелки когда скролл достиг края */
+.arrow.disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+    .arrow.disabled:hover {
+        background: rgba(255, 255, 255, 0.95);
+        color: #ff8c00;
+        transform: translateY(-50%) scale(1);
     }
 
 /* СЕКЦИЯ КОНТАКТЫ */
@@ -212,6 +294,10 @@
         transform: scale(1.05);
     }
 
+    
+    
+    
+    
     /*О нас*/
 .about-section {
     display: flex;
@@ -219,16 +305,72 @@
     align-items: center; /* Центрирует содержимое по горизонтали */
     justify-content: center; /* Центрирует по вертикали, если нужно */
     text-align: center; /* Центрирует текст внутри */
-    padding: 60px 20px; /* Отступы сверху/снизу и по бокам */
+    padding: 80px 20px; /* Отступы сверху/снизу и по бокам */
+    background: linear-gradient(135deg, #ff8c00 0%, #ff6b00 100%); /* Оранжевый градиентный фон */
+    color: white; /* Белый текст */
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
 }
 
     .about-section h1 {
-        margin-bottom: 20px;
-        font-size: 36px;
+        margin-bottom: 25px;
+        font-size: 3rem;
+        font-weight: 700;
+        text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+        letter-spacing: 1px;
     }
 
     .about-section p {
-        max-width: 700px; /* Ограничивает ширину текста */
-        line-height: 1.6;
+        max-width: 800px; /* Ограничивает ширину текста */
+        line-height: 1.7;
+        font-size: 1.2rem;
+        opacity: 0.95;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        margin-bottom: 20px;
     }
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 991px) {
+    .about-section {
+        padding: 60px 20px;
+    }
+
+        .about-section h1 {
+            font-size: 2.5rem;
+        }
+
+        .about-section p {
+            font-size: 1.1rem;
+            max-width: 700px;
+        }
+}
+
+@media (max-width: 767px) {
+    .about-section {
+        padding: 50px 15px;
+    }
+
+        .about-section h1 {
+            font-size: 2rem;
+        }
+
+        .about-section p {
+            font-size: 1rem;
+            max-width: 100%;
+        }
+}
+
+@media (max-width: 480px) {
+    .about-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .about-section p {
+        font-size: 0.95rem;
+    }
+}
+
+
+
 

@@ -15,4 +15,5 @@ document.addEventListener('DOMContentLoaded', () => {
     leftArrow.addEventListener('click', () => {
         wrapper.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
     });
+
 });
