@@ -10,3 +10,15 @@ D:\Охлоповский 315\Educational-practice-2025\Educational-practice-202
 D:\Охлоповский 315\Educational-practice-2025\Educational-practice-2025\Service.Domain\obj\Debug\net8.0\refint\Service.Domain.dll
 D:\Охлоповский 315\Educational-practice-2025\Educational-practice-2025\Service.Domain\obj\Debug\net8.0\Service.Domain.pdb
 D:\Охлоповский 315\Educational-practice-2025\Educational-practice-2025\Service.Domain\obj\Debug\net8.0\ref\Service.Domain.dll
+D:\315 Kiro-J\Educational-practice-2025\Service.Domain\bin\Debug\net8.0\Service.Domain.deps.json
+D:\315 Kiro-J\Educational-practice-2025\Service.Domain\bin\Debug\net8.0\Service.Domain.dll
+D:\315 Kiro-J\Educational-practice-2025\Service.Domain\bin\Debug\net8.0\Service.Domain.pdb
+D:\315 Kiro-J\Educational-practice-2025\Service.Domain\obj\Debug\net8.0\Service.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\315 Kiro-J\Educational-practice-2025\Service.Domain\obj\Debug\net8.0\Service.Domain.AssemblyInfoInputs.cache
+D:\315 Kiro-J\Educational-practice-2025\Service.Domain\obj\Debug\net8.0\Service.Domain.AssemblyInfo.cs
+D:\315 Kiro-J\Educational-practice-2025\Service.Domain\obj\Debug\net8.0\Service.Domain.csproj.CoreCompileInputs.cache
+D:\315 Kiro-J\Educational-practice-2025\Service.Domain\obj\Debug\net8.0\Service.Domain.sourcelink.json
+D:\315 Kiro-J\Educational-practice-2025\Service.Domain\obj\Debug\net8.0\Service.Domain.dll
+D:\315 Kiro-J\Educational-practice-2025\Service.Domain\obj\Debug\net8.0\refint\Service.Domain.dll
+D:\315 Kiro-J\Educational-practice-2025\Service.Domain\obj\Debug\net8.0\Service.Domain.pdb
+D:\315 Kiro-J\Educational-practice-2025\Service.Domain\obj\Debug\net8.0\ref\Service.Domain.dll

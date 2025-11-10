@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Охлоповский 315\\Educational-practice-2025\\Educational-practice-2025\\Service.DAL\\Service.DAL.csproj": {}
+    "D:\\315 Kiro-J\\Educational-practice-2025\\Service.DAL\\Service.DAL.csproj": {}
   },
   "projects": {
-    "D:\\Охлоповский 315\\Educational-practice-2025\\Educational-practice-2025\\Service.DAL\\Service.DAL.csproj": {
+    "D:\\315 Kiro-J\\Educational-practice-2025\\Service.DAL\\Service.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Охлоповский 315\\Educational-practice-2025\\Educational-practice-2025\\Service.DAL\\Service.DAL.csproj",
+        "projectUniqueName": "D:\\315 Kiro-J\\Educational-practice-2025\\Service.DAL\\Service.DAL.csproj",
         "projectName": "Service.DAL",
-        "projectPath": "D:\\Охлоповский 315\\Educational-practice-2025\\Educational-practice-2025\\Service.DAL\\Service.DAL.csproj",
-        "packagesPath": "D:\\Users\\tmu4.SERVER-ECONOM\\.nuget\\packages\\",
-        "outputPath": "D:\\Охлоповский 315\\Educational-practice-2025\\Educational-practice-2025\\Service.DAL\\obj\\",
+        "projectPath": "D:\\315 Kiro-J\\Educational-practice-2025\\Service.DAL\\Service.DAL.csproj",
+        "packagesPath": "D:\\Users\\tmu5.SERVER-ECONOM\\.nuget\\packages\\",
+        "outputPath": "D:\\315 Kiro-J\\Educational-practice-2025\\Service.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "D:\\Users\\tmu4.SERVER-ECONOM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "D:\\Users\\tmu5.SERVER-ECONOM\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

@@ -502,6 +502,47 @@ html, body {
         font-size: 1rem;
     }
 
+/* НИЖНЕЕ МЕНЮ - ВСЕГДА ПО ЦЕНТРУ */
+.header-bottom {
+    background-color: #f5f5f5;
+    padding: 10px 0;
+    position: relative;
+    z-index: 999;
+    display: flex;
+    justify-content: center; /* Центрируем меню */
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Центрируем элементы меню */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+    .menu li {
+        margin: 0;
+    }
+
+        .menu li a {
+            text-decoration: none;
+            color: inherit;
+            font-weight: 600;
+            transition: all 0.35s ease;
+            padding: 8px 16px;
+            border-radius: 5px;
+            display: block;
+            white-space: nowrap;
+        }
+
+            .menu li a:hover {
+                background-color: orange;
+                color: white;
+            }
+
 /* МЕДИА-ЗАПРОСЫ */
 
 /* Десктоп - скрываем мобильное меню */
@@ -638,6 +679,7 @@ html, body {
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none;
         -ms-overflow-style: none;
+        justify-content: flex-start; /* Для горизонтального скролла */
     }
 
         .header-bottom::-webkit-scrollbar {
@@ -647,7 +689,7 @@ html, body {
     .menu {
         display: inline-flex;
         flex-wrap: nowrap;
-        justify-content: flex-start;
+        justify-content: center; /* Центрируем элементы */
         padding: 0 15px;
         min-width: min-content;
         gap: 8px;
@@ -766,16 +808,11 @@ html, body {
     }
 }
 
-/* Гарантируем, что контент не выходит за границы */
-img, video, iframe {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Адаптивные таблицы */
-.table-responsive {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+/* Скрываем нижнее меню на мобильных устройствах */
+@media (max-width: 767px) {
+    .header-bottom {
+        display: none;
+    }
 }
 
 
