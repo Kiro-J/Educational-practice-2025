@@ -1,5 +1,15 @@
+using Microsoft.EntityFrameworkCore;
+using Service.DAL;
+
+
+
+
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
+
+
+string connection = builder.Configuration.GetConnectionString("DefaultConnection");
+
 
 var app = builder.Build();
 

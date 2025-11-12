@@ -22,6 +22,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="NpgsqlYB.EntityFrameworkCore.YugabyteDB" Version="8.0.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Service.Domain\Service.Domain.csproj" />
   </ItemGroup>
 

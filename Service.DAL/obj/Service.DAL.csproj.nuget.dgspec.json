@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\315 Kiro-J\\Educational-practice-2025\\Service.DAL\\Service.DAL.csproj": {}
+    "D:\\Охлоповский 315\\Educational-practice-2025\\Service.DAL\\Service.DAL.csproj": {}
   },
   "projects": {
-    "D:\\315 Kiro-J\\Educational-practice-2025\\Service.DAL\\Service.DAL.csproj": {
+    "D:\\Охлоповский 315\\Educational-practice-2025\\Service.DAL\\Service.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\315 Kiro-J\\Educational-practice-2025\\Service.DAL\\Service.DAL.csproj",
+        "projectUniqueName": "D:\\Охлоповский 315\\Educational-practice-2025\\Service.DAL\\Service.DAL.csproj",
         "projectName": "Service.DAL",
-        "projectPath": "D:\\315 Kiro-J\\Educational-practice-2025\\Service.DAL\\Service.DAL.csproj",
+        "projectPath": "D:\\Охлоповский 315\\Educational-practice-2025\\Service.DAL\\Service.DAL.csproj",
         "packagesPath": "D:\\Users\\tmu5.SERVER-ECONOM\\.nuget\\packages\\",
-        "outputPath": "D:\\315 Kiro-J\\Educational-practice-2025\\Service.DAL\\obj\\",
+        "outputPath": "D:\\Охлоповский 315\\Educational-practice-2025\\Service.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,6 +49,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

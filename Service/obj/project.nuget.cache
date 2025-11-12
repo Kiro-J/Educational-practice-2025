@@ -1,8 +1,24 @@
 {
   "version": 2,
-  "dgSpecHash": "C1maZYjpcGk=",
+  "dgSpecHash": "pwg0bwZLybE=",
   "success": true,
-  "projectFilePath": "D:\\315 Kiro-J\\Educational-practice-2025\\Service\\Service.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Охлоповский 315\\Educational-practice-2025\\Service\\Service.csproj",
+  "expectedPackageFiles": [
+    "D:\\Users\\tmu5.SERVER-ECONOM\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.4\\microsoft.entityframeworkcore.8.0.4.nupkg.sha512",
+    "D:\\Users\\tmu5.SERVER-ECONOM\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.4\\microsoft.entityframeworkcore.abstractions.8.0.4.nupkg.sha512",
+    "D:\\Users\\tmu5.SERVER-ECONOM\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.4\\microsoft.entityframeworkcore.analyzers.8.0.4.nupkg.sha512",
+    "D:\\Users\\tmu5.SERVER-ECONOM\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.4\\microsoft.entityframeworkcore.relational.8.0.4.nupkg.sha512",
+    "D:\\Users\\tmu5.SERVER-ECONOM\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
+    "D:\\Users\\tmu5.SERVER-ECONOM\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.0\\microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
+    "D:\\Users\\tmu5.SERVER-ECONOM\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "D:\\Users\\tmu5.SERVER-ECONOM\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "D:\\Users\\tmu5.SERVER-ECONOM\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "D:\\Users\\tmu5.SERVER-ECONOM\\.nuget\\packages\\microsoft.extensions.logging\\8.0.0\\microsoft.extensions.logging.8.0.0.nupkg.sha512",
+    "D:\\Users\\tmu5.SERVER-ECONOM\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "D:\\Users\\tmu5.SERVER-ECONOM\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
+    "D:\\Users\\tmu5.SERVER-ECONOM\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "D:\\Users\\tmu5.SERVER-ECONOM\\.nuget\\packages\\npgsqlyb.entityframeworkcore.yugabytedb\\8.0.4.1\\npgsqlyb.entityframeworkcore.yugabytedb.8.0.4.1.nupkg.sha512",
+    "D:\\Users\\tmu5.SERVER-ECONOM\\.nuget\\packages\\npgsqlyugabytedb\\8.0.3.2\\npgsqlyugabytedb.8.0.3.2.nupkg.sha512"
+  ],
   "logs": []
 }

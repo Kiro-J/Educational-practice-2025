@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\315 Kiro-J\\Educational-practice-2025\\Service.Domain\\Service.Domain.csproj",
+      "projectUniqueName": "D:\\Охлоповский 315\\Educational-practice-2025\\Service.Domain\\Service.Domain.csproj",
       "projectName": "Service.Domain",
-      "projectPath": "D:\\315 Kiro-J\\Educational-practice-2025\\Service.Domain\\Service.Domain.csproj",
+      "projectPath": "D:\\Охлоповский 315\\Educational-practice-2025\\Service.Domain\\Service.Domain.csproj",
       "packagesPath": "D:\\Users\\tmu5.SERVER-ECONOM\\.nuget\\packages\\",
-      "outputPath": "D:\\315 Kiro-J\\Educational-practice-2025\\Service.Domain\\obj\\",
+      "outputPath": "D:\\Охлоповский 315\\Educational-practice-2025\\Service.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
