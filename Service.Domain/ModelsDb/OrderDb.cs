@@ -2,15 +2,18 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Service.Domain.ModelsDb
 {
     [Table("Orders")]
     public class OrderDb
     {
+        public OrderDb()
+        {
+            PaymentMethod = string.Empty;
+            PaymentStatus = string.Empty;
+        }
+
         [Key]
         [Column("order_id")]
         public Guid OrderId { get; set; }
@@ -27,19 +30,19 @@ namespace Service.Domain.ModelsDb
 
         [Column("payment_method")]
         [MaxLength(50)]
-        public string PaymentMethod { get; set; }
+        public required string PaymentMethod { get; set; }
 
         [Column("payment_status")]
         [MaxLength(50)]
-        public string PaymentStatus { get; set; }
+        public required string PaymentStatus { get; set; }
 
         [ForeignKey("Inventory")]
         [Column("item_id")]
         public Guid ItemId { get; set; }
 
         // Navigation properties
-        public virtual UserDb User { get; set; }
-        public virtual InventoryDb Inventory { get; set; }
-        public virtual DeliveryDb Delivery { get; set; }
+        public virtual required UserDb User { get; set; }
+        public virtual required InventoryDb Inventory { get; set; }
+        public virtual DeliveryDb? Delivery { get; set; }
     }
 }
