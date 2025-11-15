@@ -10,3 +10,15 @@ D:\Охлоповский 315\Educational-practice-2025\Educational-practice-202
 D:\Охлоповский 315\Educational-practice-2025\Educational-practice-2025\Service.Services\obj\Debug\net8.0\refint\Service.Services.dll
 D:\Охлоповский 315\Educational-practice-2025\Educational-practice-2025\Service.Services\obj\Debug\net8.0\Service.Services.pdb
 D:\Охлоповский 315\Educational-practice-2025\Educational-practice-2025\Service.Services\obj\Debug\net8.0\ref\Service.Services.dll
+D:\Охлоповский 315\Educational-practice-2025\Service.Services\bin\Debug\net8.0\Service.Services.deps.json
+D:\Охлоповский 315\Educational-practice-2025\Service.Services\bin\Debug\net8.0\Service.Services.dll
+D:\Охлоповский 315\Educational-practice-2025\Service.Services\bin\Debug\net8.0\Service.Services.pdb
+D:\Охлоповский 315\Educational-practice-2025\Service.Services\obj\Debug\net8.0\Service.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\Охлоповский 315\Educational-practice-2025\Service.Services\obj\Debug\net8.0\Service.Services.AssemblyInfoInputs.cache
+D:\Охлоповский 315\Educational-practice-2025\Service.Services\obj\Debug\net8.0\Service.Services.AssemblyInfo.cs
+D:\Охлоповский 315\Educational-practice-2025\Service.Services\obj\Debug\net8.0\Service.Services.csproj.CoreCompileInputs.cache
+D:\Охлоповский 315\Educational-practice-2025\Service.Services\obj\Debug\net8.0\Service.Services.sourcelink.json
+D:\Охлоповский 315\Educational-practice-2025\Service.Services\obj\Debug\net8.0\Service.Services.dll
+D:\Охлоповский 315\Educational-practice-2025\Service.Services\obj\Debug\net8.0\refint\Service.Services.dll
+D:\Охлоповский 315\Educational-practice-2025\Service.Services\obj\Debug\net8.0\Service.Services.pdb
+D:\Охлоповский 315\Educational-practice-2025\Service.Services\obj\Debug\net8.0\ref\Service.Services.dll

@@ -2,13 +2,12 @@ using Microsoft.EntityFrameworkCore;
 using Service.DAL;
 
 
-
-
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 
-string connection = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 
 var app = builder.Build();
@@ -20,7 +19,7 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseStaticFiles(); // важно Ч чтобы подключение к wwwroot работало
+app.UseStaticFiles(); 
 
 app.UseRouting();
 
@@ -30,3 +29,6 @@ app.MapControllerRoute(
 );
 
 app.Run();
+
+
+
