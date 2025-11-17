@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Service.Domain.Models
 {
-    internal class Take
+    public class Take
     {
+        public Guid Id { get; set; }
+        public Guid OrderId { get; set; }
+        public Guid InventoryId { get; set; }
+        public int Quantity { get; set; }
+        public DateTime TakenAt { get; set; }
     }
 }

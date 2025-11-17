@@ -3,7 +3,22 @@
   "WorkspaceRootPath": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6C4CBEB2-16E0-4020-AC64-DCC8409010E3}|..\\Service.Domain\\Service.Domain.csproj|d:\\\u043E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\educational-practice-2025\\service.domain\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6C4CBEB2-16E0-4020-AC64-DCC8409010E3}|..\\Service.Domain\\Service.Domain.csproj|d:\\\u043E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\educational-practice-2025\\service.domain\\modelsdb\\takedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C4CBEB2-16E0-4020-AC64-DCC8409010E3}|..\\Service.Domain\\Service.Domain.csproj|d:\\\u043E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\educational-practice-2025\\service.domain\\modelsdb\\userdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C4CBEB2-16E0-4020-AC64-DCC8409010E3}|..\\Service.Domain\\Service.Domain.csproj|d:\\\u043E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\educational-practice-2025\\service.domain\\modelsdb\\orderdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C4CBEB2-16E0-4020-AC64-DCC8409010E3}|..\\Service.Domain\\Service.Domain.csproj|d:\\\u043E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\educational-practice-2025\\service.domain\\modelsdb\\inventorydb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C4CBEB2-16E0-4020-AC64-DCC8409010E3}|..\\Service.Domain\\Service.Domain.csproj|d:\\\u043E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\educational-practice-2025\\service.domain\\modelsdb\\deliverydb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C4CBEB2-16E0-4020-AC64-DCC8409010E3}|..\\Service.Domain\\Service.Domain.csproj|d:\\\u043E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\educational-practice-2025\\service.domain\\models\\take.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6C4CBEB2-16E0-4020-AC64-DCC8409010E3}|..\\Service.Domain\\Service.Domain.csproj|d:\\\u043E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\educational-practice-2025\\service.domain\\models\\delivery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -15,19 +30,16 @@
       "AbsoluteMoniker": "D:0:0:{6C4CBEB2-16E0-4020-AC64-DCC8409010E3}|..\\Service.Domain\\Service.Domain.csproj|d:\\\u043E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\educational-practice-2025\\service.domain\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6C4CBEB2-16E0-4020-AC64-DCC8409010E3}|..\\Service.Domain\\Service.Domain.csproj|d:\\\u043E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\educational-practice-2025\\service.domain\\models\\take.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6C4CBEB2-16E0-4020-AC64-DCC8409010E3}|..\\Service.Domain\\Service.Domain.csproj|d:\\\u043E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\educational-practice-2025\\service.domain\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C4CBEB2-16E0-4020-AC64-DCC8409010E3}|..\\Service.Domain\\Service.Domain.csproj|d:\\\u043E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\educational-practice-2025\\service.domain\\enums\\deliverytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B83A5FA4-D7A6-4A65-AA34-3C0E479C0526}|..\\Service.DAL\\Service.DAL.csproj|d:\\\u043E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\educational-practice-2025\\service.dal\\ibasestorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6C4CBEB2-16E0-4020-AC64-DCC8409010E3}|..\\Service.Domain\\Service.Domain.csproj|d:\\\u043E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\educational-practice-2025\\service.domain\\modelsdb\\deliverydb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B83A5FA4-D7A6-4A65-AA34-3C0E479C0526}|..\\Service.DAL\\Service.DAL.csproj|d:\\\u043E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\educational-practice-2025\\service.dal\\storage\\deliverystorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C4CBEB2-16E0-4020-AC64-DCC8409010E3}|..\\Service.Domain\\Service.Domain.csproj|d:\\\u043E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\educational-practice-2025\\service.domain\\modelsdb\\inventorydb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B83A5FA4-D7A6-4A65-AA34-3C0E479C0526}|..\\Service.DAL\\Service.DAL.csproj|d:\\\u043E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\educational-practice-2025\\service.dal\\storage\\inventorystorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -36,19 +48,10 @@
       "AbsoluteMoniker": "D:0:0:{B83A5FA4-D7A6-4A65-AA34-3C0E479C0526}|..\\Service.DAL\\Service.DAL.csproj|d:\\\u043E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\educational-practice-2025\\service.dal\\storage\\orderstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6C4CBEB2-16E0-4020-AC64-DCC8409010E3}|..\\Service.Domain\\Service.Domain.csproj|d:\\\u043E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\educational-practice-2025\\service.domain\\modelsdb\\orderdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B83A5FA4-D7A6-4A65-AA34-3C0E479C0526}|..\\Service.DAL\\Service.DAL.csproj|d:\\\u043E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\educational-practice-2025\\service.dal\\storage\\takestorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B83A5FA4-D7A6-4A65-AA34-3C0E479C0526}|..\\Service.DAL\\Service.DAL.csproj|d:\\\u043E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\educational-practice-2025\\service.dal\\storage\\userstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C4CBEB2-16E0-4020-AC64-DCC8409010E3}|..\\Service.Domain\\Service.Domain.csproj|d:\\\u043E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\educational-practice-2025\\service.domain\\modelsdb\\userdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C4CBEB2-16E0-4020-AC64-DCC8409010E3}|..\\Service.Domain\\Service.Domain.csproj|d:\\\u043E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\educational-practice-2025\\service.domain\\modelsdb\\takedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B83A5FA4-D7A6-4A65-AA34-3C0E479C0526}|..\\Service.DAL\\Service.DAL.csproj|d:\\\u043E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\educational-practice-2025\\service.dal\\service.dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
@@ -68,89 +71,89 @@
       "DocumentGroups": [
         {
           "DockedHeight": 198,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Delivery.cs",
               "DocumentMoniker": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.Domain\\Models\\Delivery.cs",
               "RelativeDocumentMoniker": "..\\Service.Domain\\Models\\Delivery.cs",
               "ToolTip": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.Domain\\Models\\Delivery.cs",
               "RelativeToolTip": "..\\Service.Domain\\Models\\Delivery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-15T11:47:14.233Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Inventory.cs",
               "DocumentMoniker": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.Domain\\Models\\Inventory.cs",
               "RelativeDocumentMoniker": "..\\Service.Domain\\Models\\Inventory.cs",
               "ToolTip": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.Domain\\Models\\Inventory.cs",
               "RelativeToolTip": "..\\Service.Domain\\Models\\Inventory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-15T11:46:47.621Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "Order.cs",
               "DocumentMoniker": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.Domain\\Models\\Order.cs",
               "RelativeDocumentMoniker": "..\\Service.Domain\\Models\\Order.cs",
               "ToolTip": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.Domain\\Models\\Order.cs",
               "RelativeToolTip": "..\\Service.Domain\\Models\\Order.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-15T11:46:25.363Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Take.cs",
               "DocumentMoniker": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.Domain\\Models\\Take.cs",
               "RelativeDocumentMoniker": "..\\Service.Domain\\Models\\Take.cs",
               "ToolTip": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.Domain\\Models\\Take.cs",
               "RelativeToolTip": "..\\Service.Domain\\Models\\Take.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-15T11:45:58.885Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.Domain\\Models\\User.cs",
               "RelativeDocumentMoniker": "..\\Service.Domain\\Models\\User.cs",
               "ToolTip": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.Domain\\Models\\User.cs",
               "RelativeToolTip": "..\\Service.Domain\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-15T11:45:47.154Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "DeliveryDb.cs",
               "DocumentMoniker": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.Domain\\ModelsDb\\DeliveryDb.cs",
               "RelativeDocumentMoniker": "..\\Service.Domain\\ModelsDb\\DeliveryDb.cs",
               "ToolTip": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.Domain\\ModelsDb\\DeliveryDb.cs",
               "RelativeToolTip": "..\\Service.Domain\\ModelsDb\\DeliveryDb.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAA5wCgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-15T11:38:24.761Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "InventoryDb.cs",
               "DocumentMoniker": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.Domain\\ModelsDb\\InventoryDb.cs",
               "RelativeDocumentMoniker": "..\\Service.Domain\\ModelsDb\\InventoryDb.cs",
@@ -163,7 +166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 2,
               "Title": "OrderDb.cs",
               "DocumentMoniker": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.Domain\\ModelsDb\\OrderDb.cs",
               "RelativeDocumentMoniker": "..\\Service.Domain\\ModelsDb\\OrderDb.cs",
@@ -176,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 1,
               "Title": "UserDb.cs",
               "DocumentMoniker": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.Domain\\ModelsDb\\UserDb.cs",
               "RelativeDocumentMoniker": "..\\Service.Domain\\ModelsDb\\UserDb.cs",
@@ -189,59 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DeliveryStorage.cs",
-              "DocumentMoniker": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.DAL\\Storage\\DeliveryStorage.cs",
-              "RelativeDocumentMoniker": "..\\Service.DAL\\Storage\\DeliveryStorage.cs",
-              "ToolTip": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.DAL\\Storage\\DeliveryStorage.cs",
-              "RelativeToolTip": "..\\Service.DAL\\Storage\\DeliveryStorage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAL8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T11:04:16.928Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "UserStorage.cs",
-              "DocumentMoniker": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.DAL\\Storage\\UserStorage.cs",
-              "RelativeDocumentMoniker": "..\\Service.DAL\\Storage\\UserStorage.cs",
-              "ToolTip": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.DAL\\Storage\\UserStorage.cs",
-              "RelativeToolTip": "..\\Service.DAL\\Storage\\UserStorage.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAQwBoAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T11:02:06.877Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "TakeStorage.cs",
-              "DocumentMoniker": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.DAL\\Storage\\TakeStorage.cs",
-              "RelativeDocumentMoniker": "..\\Service.DAL\\Storage\\TakeStorage.cs",
-              "ToolTip": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.DAL\\Storage\\TakeStorage.cs",
-              "RelativeToolTip": "..\\Service.DAL\\Storage\\TakeStorage.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAQwB8AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T11:02:51.542Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IBaseStorage.cs",
-              "DocumentMoniker": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.DAL\\IBaseStorage.cs",
-              "RelativeDocumentMoniker": "..\\Service.DAL\\IBaseStorage.cs",
-              "ToolTip": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.DAL\\IBaseStorage.cs",
-              "RelativeToolTip": "..\\Service.DAL\\IBaseStorage.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAIwAsAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T10:54:46.791Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 0,
               "Title": "TakeDb.cs",
               "DocumentMoniker": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.Domain\\ModelsDb\\TakeDb.cs",
               "RelativeDocumentMoniker": "..\\Service.Domain\\ModelsDb\\TakeDb.cs",
@@ -255,6 +206,67 @@
             {
               "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "DeliveryType.cs",
+              "DocumentMoniker": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.Domain\\Enums\\DeliveryType.cs",
+              "RelativeDocumentMoniker": "..\\Service.Domain\\Enums\\DeliveryType.cs",
+              "ToolTip": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.Domain\\Enums\\DeliveryType.cs",
+              "RelativeToolTip": "..\\Service.Domain\\Enums\\DeliveryType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T11:24:46.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DeliveryStorage.cs",
+              "DocumentMoniker": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.DAL\\Storage\\DeliveryStorage.cs",
+              "RelativeDocumentMoniker": "..\\Service.DAL\\Storage\\DeliveryStorage.cs",
+              "ToolTip": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.DAL\\Storage\\DeliveryStorage.cs",
+              "RelativeToolTip": "..\\Service.DAL\\Storage\\DeliveryStorage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAL8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T11:04:16.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UserStorage.cs",
+              "DocumentMoniker": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.DAL\\Storage\\UserStorage.cs",
+              "RelativeDocumentMoniker": "..\\Service.DAL\\Storage\\UserStorage.cs",
+              "ToolTip": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.DAL\\Storage\\UserStorage.cs",
+              "RelativeToolTip": "..\\Service.DAL\\Storage\\UserStorage.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAQwBoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T11:02:06.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TakeStorage.cs",
+              "DocumentMoniker": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.DAL\\Storage\\TakeStorage.cs",
+              "RelativeDocumentMoniker": "..\\Service.DAL\\Storage\\TakeStorage.cs",
+              "ToolTip": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.DAL\\Storage\\TakeStorage.cs",
+              "RelativeToolTip": "..\\Service.DAL\\Storage\\TakeStorage.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwB8AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T11:02:51.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IBaseStorage.cs",
+              "DocumentMoniker": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.DAL\\IBaseStorage.cs",
+              "RelativeDocumentMoniker": "..\\Service.DAL\\IBaseStorage.cs",
+              "ToolTip": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.DAL\\IBaseStorage.cs",
+              "RelativeToolTip": "..\\Service.DAL\\IBaseStorage.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAIwAsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T10:54:46.791Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "OrderStorage.cs",
               "DocumentMoniker": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.DAL\\Storage\\OrderStorage.cs",
               "RelativeDocumentMoniker": "..\\Service.DAL\\Storage\\OrderStorage.cs",
@@ -262,12 +274,11 @@
               "RelativeToolTip": "..\\Service.DAL\\Storage\\OrderStorage.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAqwCAAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T11:03:17.932Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-15T11:03:17.932Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "InventoryStorage.cs",
               "DocumentMoniker": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.DAL\\Storage\\InventoryStorage.cs",
               "RelativeDocumentMoniker": "..\\Service.DAL\\Storage\\InventoryStorage.cs",
@@ -275,25 +286,23 @@
               "RelativeToolTip": "..\\Service.DAL\\Storage\\InventoryStorage.cs",
               "ViewState": "AgIAAHUAAAAAAAAAAAAQwLYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T11:03:48.808Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-15T11:03:48.808Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Service.DAL",
+              "DocumentIndex": 17,
+              "Title": "Service.DAL.csproj",
               "DocumentMoniker": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.DAL\\Service.DAL.csproj",
               "RelativeDocumentMoniker": "..\\Service.DAL\\Service.DAL.csproj",
               "ToolTip": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.DAL\\Service.DAL.csproj",
               "RelativeToolTip": "..\\Service.DAL\\Service.DAL.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-15T10:53:48.177Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-15T10:53:48.177Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "20251115103453_Init.cs",
               "DocumentMoniker": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service.DAL\\Migrations\\20251115103453_Init.cs",
               "RelativeDocumentMoniker": "..\\Service.DAL\\Migrations\\20251115103453_Init.cs",
@@ -301,12 +310,11 @@
               "RelativeToolTip": "..\\Service.DAL\\Migrations\\20251115103453_Init.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T10:34:53.644Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-15T10:34:53.644Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\\u041E\u0445\u043B\u043E\u043F\u043E\u0432\u0441\u043A\u0438\u0439 315\\Educational-practice-2025\\Service\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -314,8 +322,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T14:35:47.21Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-12T14:35:47.21Z"
             }
           ]
         }
