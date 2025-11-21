@@ -38,3 +38,15 @@ D:\Охлоповский 315\Educational-practice-2025\Service.Domain\obj\Debug
 D:\Охлоповский 315\Educational-practice-2025\Service.Domain\obj\Debug\net8.0\refint\Service.Domain.dll
 D:\Охлоповский 315\Educational-practice-2025\Service.Domain\obj\Debug\net8.0\Service.Domain.pdb
 D:\Охлоповский 315\Educational-practice-2025\Service.Domain\obj\Debug\net8.0\ref\Service.Domain.dll
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.Domain\bin\Debug\net8.0\Service.Domain.deps.json
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.Domain\bin\Debug\net8.0\Service.Domain.dll
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.Domain\bin\Debug\net8.0\Service.Domain.pdb
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.Domain\obj\Debug\net8.0\Service.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.Domain\obj\Debug\net8.0\Service.Domain.AssemblyInfoInputs.cache
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.Domain\obj\Debug\net8.0\Service.Domain.AssemblyInfo.cs
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.Domain\obj\Debug\net8.0\Service.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.Domain\obj\Debug\net8.0\Service.Domain.sourcelink.json
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.Domain\obj\Debug\net8.0\Service.Domain.dll
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.Domain\obj\Debug\net8.0\refint\Service.Domain.dll
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.Domain\obj\Debug\net8.0\Service.Domain.pdb
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.Domain\obj\Debug\net8.0\ref\Service.Domain.dll

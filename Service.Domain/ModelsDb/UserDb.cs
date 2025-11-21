@@ -39,6 +39,9 @@ namespace Service.Domain.ModelsDb
         [Column("createdAt")]
         public DateTime CreatedAt { get; set; }
 
+        [Column("last_login")] // Добавьте это поле
+        public DateTime? LastLogin { get; set; } // Может быть null
+
         // Navigation properties
         public virtual ICollection<TakeDb> Takes { get; set; }
         public virtual ICollection<OrderDb> Orders { get; set; }

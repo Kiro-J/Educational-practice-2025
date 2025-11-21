@@ -879,24 +879,11 @@
       "Service.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "Service.Services": "1.0.0"
-        },
         "compile": {
           "bin/placeholder/Service.Domain.dll": {}
         },
         "runtime": {
           "bin/placeholder/Service.Domain.dll": {}
-        }
-      },
-      "Service.Services/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "compile": {
-          "bin/placeholder/Service.Services.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Service.Services.dll": {}
         }
       }
     }
@@ -2319,11 +2306,6 @@
       "type": "project",
       "path": "../Service.Domain/Service.Domain.csproj",
       "msbuildProject": "../Service.Domain/Service.Domain.csproj"
-    },
-    "Service.Services/1.0.0": {
-      "type": "project",
-      "path": "../Service.Services/Service.Services.csproj",
-      "msbuildProject": "../Service.Services/Service.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2331,28 +2313,27 @@
       "Microsoft.EntityFrameworkCore >= 8.0.4",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.4",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 8.0.4",
-      "Service.Domain >= 1.0.0",
-      "Service.Services >= 1.0.0"
+      "Service.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "D:\\Users\\tmu5.SERVER-ECONOM\\.nuget\\packages\\": {},
+    "C:\\Users\\Николай\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Охлоповский 315\\Educational-practice-2025\\Service.DAL\\Service.DAL.csproj",
+      "projectUniqueName": "C:\\Users\\Николай\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service.DAL\\Service.DAL.csproj",
       "projectName": "Service.DAL",
-      "projectPath": "D:\\Охлоповский 315\\Educational-practice-2025\\Service.DAL\\Service.DAL.csproj",
-      "packagesPath": "D:\\Users\\tmu5.SERVER-ECONOM\\.nuget\\packages\\",
-      "outputPath": "D:\\Охлоповский 315\\Educational-practice-2025\\Service.DAL\\obj\\",
+      "projectPath": "C:\\Users\\Николай\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service.DAL\\Service.DAL.csproj",
+      "packagesPath": "C:\\Users\\Николай\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Николай\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "D:\\Users\\tmu5.SERVER-ECONOM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Николай\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2361,17 +2342,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Охлоповский 315\\Educational-practice-2025\\Service.Domain\\Service.Domain.csproj": {
-              "projectPath": "D:\\Охлоповский 315\\Educational-practice-2025\\Service.Domain\\Service.Domain.csproj"
-            },
-            "D:\\Охлоповский 315\\Educational-practice-2025\\Service.Services\\Service.Services.csproj": {
-              "projectPath": "D:\\Охлоповский 315\\Educational-practice-2025\\Service.Services\\Service.Services.csproj"
+            "C:\\Users\\Николай\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service.Domain\\Service.Domain.csproj": {
+              "projectPath": "C:\\Users\\Николай\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service.Domain\\Service.Domain.csproj"
             }
           }
         }

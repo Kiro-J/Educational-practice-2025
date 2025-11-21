@@ -22,3 +22,21 @@ D:\Охлоповский 315\Educational-practice-2025\Service.Services\obj\Deb
 D:\Охлоповский 315\Educational-practice-2025\Service.Services\obj\Debug\net8.0\refint\Service.Services.dll
 D:\Охлоповский 315\Educational-practice-2025\Service.Services\obj\Debug\net8.0\Service.Services.pdb
 D:\Охлоповский 315\Educational-practice-2025\Service.Services\obj\Debug\net8.0\ref\Service.Services.dll
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.Services\bin\Debug\net8.0\Service.Services.deps.json
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.Services\bin\Debug\net8.0\Service.Services.dll
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.Services\bin\Debug\net8.0\Service.Services.pdb
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.Services\bin\Debug\net8.0\Service.DAL.dll
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.Services\bin\Debug\net8.0\Service.Domain.dll
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.Services\bin\Debug\net8.0\Service.DAL.pdb
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.Services\bin\Debug\net8.0\Service.Domain.pdb
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.Services\obj\Debug\net8.0\Service.Services.csproj.AssemblyReference.cache
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.Services\obj\Debug\net8.0\Service.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.Services\obj\Debug\net8.0\Service.Services.AssemblyInfoInputs.cache
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.Services\obj\Debug\net8.0\Service.Services.AssemblyInfo.cs
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.Services\obj\Debug\net8.0\Service.Services.csproj.CoreCompileInputs.cache
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.Services\obj\Debug\net8.0\Service.Services.sourcelink.json
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.Services\obj\Debug\net8.0\Service..46D5083E.Up2Date
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.Services\obj\Debug\net8.0\Service.Services.dll
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.Services\obj\Debug\net8.0\refint\Service.Services.dll
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.Services\obj\Debug\net8.0\Service.Services.pdb
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.Services\obj\Debug\net8.0\ref\Service.Services.dll

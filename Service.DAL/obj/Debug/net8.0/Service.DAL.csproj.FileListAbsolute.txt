@@ -30,3 +30,21 @@ D:\Охлоповский 315\Educational-practice-2025\Service.DAL\obj\Debug\ne
 D:\Охлоповский 315\Educational-practice-2025\Service.DAL\obj\Debug\net8.0\ref\Service.DAL.dll
 D:\Охлоповский 315\Educational-practice-2025\Service.DAL\bin\Debug\net8.0\Service.DAL.runtimeconfig.json
 D:\Охлоповский 315\Educational-practice-2025\Service.DAL\obj\Debug\net8.0\Service.DAL.genruntimeconfig.cache
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.DAL\bin\Debug\net8.0\Service.DAL.deps.json
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.DAL\bin\Debug\net8.0\Service.DAL.runtimeconfig.json
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.DAL\bin\Debug\net8.0\Service.DAL.dll
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.DAL\bin\Debug\net8.0\Service.DAL.pdb
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.DAL\bin\Debug\net8.0\Service.Domain.dll
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.DAL\bin\Debug\net8.0\Service.Domain.pdb
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.DAL\obj\Debug\net8.0\Service.DAL.csproj.AssemblyReference.cache
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.DAL\obj\Debug\net8.0\Service.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.DAL\obj\Debug\net8.0\Service.DAL.AssemblyInfoInputs.cache
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.DAL\obj\Debug\net8.0\Service.DAL.AssemblyInfo.cs
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.DAL\obj\Debug\net8.0\Service.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.DAL\obj\Debug\net8.0\Service.DAL.sourcelink.json
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.DAL\obj\Debug\net8.0\Service..40D5BCA0.Up2Date
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.DAL\obj\Debug\net8.0\Service.DAL.dll
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.DAL\obj\Debug\net8.0\refint\Service.DAL.dll
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.DAL\obj\Debug\net8.0\Service.DAL.pdb
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.DAL\obj\Debug\net8.0\Service.DAL.genruntimeconfig.cache
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.DAL\obj\Debug\net8.0\ref\Service.DAL.dll

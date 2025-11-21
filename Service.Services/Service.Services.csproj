@@ -6,4 +6,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+    <PackageReference Include="GoogleApi" Version="5.8.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Service.DAL\Service.DAL.csproj" />
+    <ProjectReference Include="..\Service.Domain\Service.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

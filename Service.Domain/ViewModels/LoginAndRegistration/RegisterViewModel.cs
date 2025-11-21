@@ -2,6 +2,7 @@
 
 namespace Service.Domain.ViewModels.LoginAndRegistration
 {
+
     public class RegisterViewModel
     {
         [Required(ErrorMessage = "Имя пользователя обязательно")]
@@ -24,7 +25,8 @@ namespace Service.Domain.ViewModels.LoginAndRegistration
         [DataType(DataType.Password)]
         [Display(Name = "Подтвердите пароль")]
         public string ConfirmPassword { get; set; }
-    }
 
-   
+
+
+    }
 }

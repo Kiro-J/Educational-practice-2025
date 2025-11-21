@@ -7,30 +7,14 @@
   "targets": {
     ".NETCoreApp,Version=v8.0": {
       "Service.Domain/1.0.0": {
-        "dependencies": {
-          "Service.Services": "1.0.0"
-        },
         "runtime": {
           "Service.Domain.dll": {}
-        }
-      },
-      "Service.Services/1.0.0": {
-        "runtime": {
-          "Service.Services.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
         }
       }
     }
   },
   "libraries": {
     "Service.Domain/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Service.Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

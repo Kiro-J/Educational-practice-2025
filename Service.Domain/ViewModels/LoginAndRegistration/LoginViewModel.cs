@@ -7,7 +7,7 @@ namespace Service.Domain.ViewModels.LoginAndRegistration
         [Required(ErrorMessage = "Email обязателен")]
         [EmailAddress(ErrorMessage = "Неверный формат email")]
         [Display(Name = "Email")]
-        public string Email { get; set; }
+        public string Login { get; set; } // Используем email для входа
 
         [Required(ErrorMessage = "Пароль обязателен")]
         [DataType(DataType.Password)]

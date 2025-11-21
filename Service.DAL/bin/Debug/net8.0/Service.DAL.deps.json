@@ -11,8 +11,7 @@
           "Microsoft.EntityFrameworkCore": "8.0.4",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.4",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.4",
-          "Service.Domain": "1.0.0",
-          "Service.Services": "1.0.0"
+          "Service.Domain": "1.0.0"
         },
         "runtime": {
           "Service.DAL.dll": {}
@@ -558,19 +557,8 @@
       },
       "System.Threading.Channels/6.0.0": {},
       "Service.Domain/1.0.0": {
-        "dependencies": {
-          "Service.Services": "1.0.0"
-        },
         "runtime": {
           "Service.Domain.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "Service.Services/1.0.0": {
-        "runtime": {
-          "Service.Services.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -872,11 +860,6 @@
       "hashPath": "system.threading.channels.6.0.0.nupkg.sha512"
     },
     "Service.Domain/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Service.Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
