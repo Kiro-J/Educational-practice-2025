@@ -1,21 +1,23 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Service.DAL;
 using Service.DAL.Storage;
+using Service.Domain.ModelsDb;
 using Service.Services.Interfaces;
 using Service.Services.Realizations;
 
 namespace Service;
 public static class Initializer
 {
-    public static void InitializeRepositories(this IServiceCollection services)
+    public static void InitializeRepositoryServices(this IServiceCollection services)
     {
-        services.AddScoped<IAccountService, AccountService>();
-        // Добавьте другие сервисы здесь
+        services.AddScoped<IBaseStorage<UserDb>, UserStorage>();
     }
 
-    public static void InitializeDbContext(this IServiceCollection services, string connectionString)
+    public static void InitializeServices(this IServiceCollection services)
     {
-        services.AddDbContext<ApplicationDbContext>(options =>
-            options.UseNpgsql(connectionString));
+        services.AddScoped<IAccountService, AccountService>();
+        services.AddControllersWithViews()
+            .AddDataAnnotationsLocalization()
+            .AddViewLocalization();
     }
 }

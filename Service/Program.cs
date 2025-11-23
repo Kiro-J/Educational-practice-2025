@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Service;
 using Service.DAL;
 using Service.Services.Interfaces;
 using Service.Services.Realizations;
@@ -26,6 +27,8 @@ builder.Services.AddAutoMapper(typeof(Program));
 // Add custom services
 builder.Services.AddScoped<IAccountService, AccountService>();
 
+builder.Services.InitializeRepositoryServices();
+builder.Services.InitializeServices();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -36,6 +39,12 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+// Добавьте после этой строки
+app.Use(async (context, next) =>
+{
+    context.Request.Scheme = "http";
+    await next();
+});
 app.UseStaticFiles();
 
 app.UseRouting();

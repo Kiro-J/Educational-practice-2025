@@ -7,6 +7,26 @@
       "RelativeMoniker": "D:0:0:{51385A1C-6767-4371-88ED-9FF96B8C1316}|Service.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{51385A1C-6767-4371-88ED-9FF96B8C1316}|Service.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\documents\\educational-practice-2025\\educational-practice-2025\\service\\views\\shared\\_loginregistrationpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51385A1C-6767-4371-88ED-9FF96B8C1316}|Service.csproj|solutionrelative:views\\shared\\_loginregistrationpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51385A1C-6767-4371-88ED-9FF96B8C1316}|Service.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\documents\\educational-practice-2025\\educational-practice-2025\\service\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51385A1C-6767-4371-88ED-9FF96B8C1316}|Service.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51385A1C-6767-4371-88ED-9FF96B8C1316}|Service.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\documents\\educational-practice-2025\\educational-practice-2025\\service\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51385A1C-6767-4371-88ED-9FF96B8C1316}|Service.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51385A1C-6767-4371-88ED-9FF96B8C1316}|Service.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\documents\\educational-practice-2025\\educational-practice-2025\\service\\initializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51385A1C-6767-4371-88ED-9FF96B8C1316}|Service.csproj|solutionrelative:initializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51385A1C-6767-4371-88ED-9FF96B8C1316}|Service.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\documents\\educational-practice-2025\\educational-practice-2025\\service\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{51385A1C-6767-4371-88ED-9FF96B8C1316}|Service.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6C4CBEB2-16E0-4020-AC64-DCC8409010E3}|..\\Service.Domain\\Service.Domain.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\documents\\educational-practice-2025\\educational-practice-2025\\service.domain\\modelsdb\\userdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -14,22 +34,10 @@
       "RelativeMoniker": "D:0:0:{51385A1C-6767-4371-88ED-9FF96B8C1316}|Service.csproj|solutionrelative:wwwroot\\js\\login_and_registration_script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51385A1C-6767-4371-88ED-9FF96B8C1316}|Service.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\documents\\educational-practice-2025\\educational-practice-2025\\service\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51385A1C-6767-4371-88ED-9FF96B8C1316}|Service.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{25658BF3-A7CD-457C-914E-56C50B5F557D}|..\\Service.Services\\Service.Services.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\documents\\educational-practice-2025\\educational-practice-2025\\service.services\\realizations\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{25658BF3-A7CD-457C-914E-56C50B5F557D}|..\\Service.Services\\Service.Services.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\documents\\educational-practice-2025\\educational-practice-2025\\service.services\\interfaces\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51385A1C-6767-4371-88ED-9FF96B8C1316}|Service.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\documents\\educational-practice-2025\\educational-practice-2025\\service\\initializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51385A1C-6767-4371-88ED-9FF96B8C1316}|Service.csproj|solutionrelative:initializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51385A1C-6767-4371-88ED-9FF96B8C1316}|Service.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\documents\\educational-practice-2025\\educational-practice-2025\\service\\views\\shared\\_loginregistrationpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{51385A1C-6767-4371-88ED-9FF96B8C1316}|Service.csproj|solutionrelative:views\\shared\\_loginregistrationpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{25658BF3-A7CD-457C-914E-56C50B5F557D}|..\\Service.Services\\Service.Services.csproj|c:\\users\\\u043D\u0438\u043A\u043E\u043B\u0430\u0439\\documents\\educational-practice-2025\\educational-practice-2025\\service.services\\appmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -57,19 +65,31 @@
       "DocumentGroups": [
         {
           "DockedHeight": 198,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserDb.cs",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service.Domain\\ModelsDb\\UserDb.cs",
-              "RelativeDocumentMoniker": "..\\Service.Domain\\ModelsDb\\UserDb.cs",
-              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service.Domain\\ModelsDb\\UserDb.cs",
-              "RelativeToolTip": "..\\Service.Domain\\ModelsDb\\UserDb.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAA1wDAAAAABAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "login_and_registration_script.js",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service\\wwwroot\\js\\login_and_registration_script.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\login_and_registration_script.js",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service\\wwwroot\\js\\login_and_registration_script.js",
+              "RelativeToolTip": "wwwroot\\js\\login_and_registration_script.js",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAAwLUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-21T19:26:11.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T19:46:38.611Z",
+              "WhenOpened": "2025-11-21T18:57:07.877Z",
               "EditorCaption": ""
             },
             {
@@ -80,14 +100,53 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowDMAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAqwCIAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-21T17:25:48.31Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAGEAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T15:36:49.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Initializer.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service\\Initializer.cs",
+              "RelativeDocumentMoniker": "Initializer.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service\\Initializer.cs",
+              "RelativeToolTip": "Initializer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T18:53:12.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_LoginRegistrationPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service\\Views\\Shared\\_LoginRegistrationPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_LoginRegistrationPartial.cshtml",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service\\Views\\Shared\\_LoginRegistrationPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_LoginRegistrationPartial.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T19:18:04.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "IAccountService.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service.Services\\Interfaces\\IAccountService.cs",
               "RelativeDocumentMoniker": "..\\Service.Services\\Interfaces\\IAccountService.cs",
@@ -95,51 +154,36 @@
               "RelativeToolTip": "..\\Service.Services\\Interfaces\\IAccountService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T18:37:28.644Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T18:37:28.644Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "login_and_registration_script.js",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service\\wwwroot\\js\\login_and_registration_script.js",
-              "RelativeDocumentMoniker": "wwwroot\\js\\login_and_registration_script.js",
-              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service\\wwwroot\\js\\login_and_registration_script.js",
-              "RelativeToolTip": "wwwroot\\js\\login_and_registration_script.js",
-              "ViewState": "AgIAAJwAAAAAAAAAAAAAwLUAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-11-21T19:26:11.445Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwCQAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T18:57:07.877Z",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-23T15:42:52.146Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Initializer.cs",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service\\Initializer.cs",
-              "RelativeDocumentMoniker": "Initializer.cs",
-              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service\\Initializer.cs",
-              "RelativeToolTip": "Initializer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Title": "UserDb.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service.Domain\\ModelsDb\\UserDb.cs",
+              "RelativeDocumentMoniker": "..\\Service.Domain\\ModelsDb\\UserDb.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service.Domain\\ModelsDb\\UserDb.cs",
+              "RelativeToolTip": "..\\Service.Domain\\ModelsDb\\UserDb.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAA1wDAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T18:53:12.576Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T19:46:38.611Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "AccountService.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service.Services\\Realizations\\AccountService.cs",
               "RelativeDocumentMoniker": "..\\Service.Services\\Realizations\\AccountService.cs",
@@ -147,25 +191,11 @@
               "RelativeToolTip": "..\\Service.Services\\Realizations\\AccountService.cs",
               "ViewState": "AgIAADYAAAAAAAAAAAAYwCEAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T18:47:14.271Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T18:47:14.271Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "_LoginRegistrationPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service\\Views\\Shared\\_LoginRegistrationPartial.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_LoginRegistrationPartial.cshtml",
-              "ToolTip": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service\\Views\\Shared\\_LoginRegistrationPartial.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_LoginRegistrationPartial.cshtml",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAwDAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-21T19:18:04.453Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "AppMappingProfile.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service.Services\\AppMappingProfile.cs",
               "RelativeDocumentMoniker": "..\\Service.Services\\AppMappingProfile.cs",
@@ -173,12 +203,11 @@
               "RelativeToolTip": "..\\Service.Services\\AppMappingProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T18:46:10.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T18:46:10.242Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "RegisterViewModel.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service.Domain\\ViewModels\\LoginAndRegistration\\RegisterViewModel.cs",
               "RelativeDocumentMoniker": "..\\Service.Domain\\ViewModels\\LoginAndRegistration\\RegisterViewModel.cs",
@@ -186,12 +215,11 @@
               "RelativeToolTip": "..\\Service.Domain\\ViewModels\\LoginAndRegistration\\RegisterViewModel.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAmwB8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T19:19:47.293Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T19:19:47.293Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service.Domain\\ViewModels\\LoginAndRegistration\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "..\\Service.Domain\\ViewModels\\LoginAndRegistration\\LoginViewModel.cs",
@@ -199,12 +227,11 @@
               "RelativeToolTip": "..\\Service.Domain\\ViewModels\\LoginAndRegistration\\LoginViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T19:25:33.204Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T19:25:33.204Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "RoleStatusCode.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service.Domain\\Response\\RoleStatusCode.cs",
               "RelativeDocumentMoniker": "..\\Service.Domain\\Response\\RoleStatusCode.cs",
@@ -212,12 +239,11 @@
               "RelativeToolTip": "..\\Service.Domain\\Response\\RoleStatusCode.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T18:34:43.118Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T18:34:43.118Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "BaseResponse.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service.Domain\\Response\\BaseResponse.cs",
               "RelativeDocumentMoniker": "..\\Service.Domain\\Response\\BaseResponse.cs",
@@ -225,12 +251,11 @@
               "RelativeToolTip": "..\\Service.Domain\\Response\\BaseResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T17:42:18.972Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T17:42:18.972Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "UserRole.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0438\u043A\u043E\u043B\u0430\u0439\\Documents\\Educational-practice-2025\\Educational-practice-2025\\Service.Domain\\Enums\\UserRole.cs",
               "RelativeDocumentMoniker": "..\\Service.Domain\\Enums\\UserRole.cs",
@@ -238,8 +263,7 @@
               "RelativeToolTip": "..\\Service.Domain\\Enums\\UserRole.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T18:18:24.463Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T18:18:24.463Z"
             }
           ]
         }

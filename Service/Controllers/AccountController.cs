@@ -73,12 +73,7 @@ namespace Service.Controllers
                     if (result.StatusCode == RoleStatusCode.OK)
                     {
                         HttpContext.Session.SetString("AuthToken", result.Data);
-                        return Json(new
-                        {
-                            success = true,
-                            message = "Вход выполнен успешно!",
-                            redirectUrl = Url.Action("Index", "Home")
-                        });
+                        return Json(new { success = true, message = "Вход выполнен успешно!" });
                     }
                     else
                     {
