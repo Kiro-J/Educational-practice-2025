@@ -21,6 +21,9 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
 });
 
+// Для работы IHttpContextAccessor в Layout
+builder.Services.AddHttpContextAccessor();
+
 // Add AutoMapper
 builder.Services.AddAutoMapper(typeof(Program));
 
@@ -39,20 +42,21 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-// Добавьте после этой строки
+
 app.Use(async (context, next) =>
 {
     context.Request.Scheme = "http";
     await next();
 });
+
 app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseAuthorization();
-
-// Use Session
+// ВАЖНО: Session должен быть до Authorization и MapControllerRoute
 app.UseSession();
+
+app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",

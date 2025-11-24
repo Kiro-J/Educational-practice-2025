@@ -14,11 +14,11 @@ namespace Service.Controllers
             _accountService = accountService;
         }
 
-        // Регистрация
+        // Регистрация (GET) - перенаправляем на главную, так как форма в модальном окне
         [HttpGet]
         public IActionResult Register()
         {
-            return View();
+            return RedirectToAction("Index", "Home");
         }
 
         [HttpPost]
@@ -54,11 +54,11 @@ namespace Service.Controllers
             return Json(new { success = false, errors = errors });
         }
 
-        // Вход
+        // Вход (GET) - перенаправляем на главную
         [HttpGet]
         public IActionResult Login()
         {
-            return View();
+            return RedirectToAction("Index", "Home");
         }
 
         [HttpPost]
@@ -99,7 +99,8 @@ namespace Service.Controllers
         public IActionResult Logout()
         {
             HttpContext.Session.Remove("AuthToken");
-            return RedirectToAction("Login", "Account");
+            // ВАЖНО: Перенаправляем на главную страницу
+            return RedirectToAction("Index", "Home");
         }
     }
 }
