@@ -1,7 +1,10 @@
 using Microsoft.EntityFrameworkCore;
+using AutoMapper;
 using Service;
 using Service.DAL;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.Extensions.DependencyInjection;
+using Service.Services; // Добавлено для доступа к AppMappingProfile
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,7 +27,8 @@ builder.Services.AddSession(options =>
 builder.Services.AddHttpContextAccessor();
 
 // Add AutoMapper
-builder.Services.AddAutoMapper(typeof(Program));
+// ИСПРАВЛЕНИЕ: Указываем typeof(AppMappingProfile), чтобы AutoMapper нашел профили в проекте Service.Services
+builder.Services.AddAutoMapper(typeof(AppMappingProfile));
 
 // --- ИСПРАВЛЕНИЕ: Вызов метода из Initializer.cs ---
 // Этот метод регистрирует AccountService, UserStorage и валидаторы

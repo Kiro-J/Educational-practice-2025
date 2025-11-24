@@ -1,13 +1,17 @@
-﻿using Service.Domain.Response;
+﻿using System.Security.Claims;
+using Service.Domain.Response;
 using Service.Domain.ViewModels.LoginAndRegistration;
-using System.Security.Claims;
 
 namespace Service.Services.Interfaces
 {
     public interface IAccountService
     {
-        // Методы теперь принимают ViewModels для удобной валидации
-        Task<BaseResponse<ClaimsIdentity>> Register(RegisterViewModel model);
+        // Register теперь просто отправляет письмо и возвращает данные для подтверждения
+        Task<BaseResponse<ConfirmEmailViewModel>> Register(RegisterViewModel model);
+
+        // ConfirmEmail проверяет код и создает пользователя
+        Task<BaseResponse<ClaimsIdentity>> ConfirmEmail(ConfirmEmailViewModel model);
+
         Task<BaseResponse<ClaimsIdentity>> Login(LoginViewModel model);
     }
 }

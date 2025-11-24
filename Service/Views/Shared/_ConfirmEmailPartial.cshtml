@@ -1,0 +1,19 @@
+﻿<div class="container-confirm-email" style="display:none;">
+    <div class="block-container confirm-container">
+        <div class="confirm-box">
+            <h3 class="form_title">Подтверждение почты</h3>
+            <p style="text-align:center; color: #666; margin-bottom: 20px;">
+                Мы отправили код на вашу почту. Введите его ниже.
+            </p>
+
+            <div class="form-group">
+                <label for="confirmCode">Код подтверждения</label>
+                <input type="text" id="confirmCode" class="form-control" placeholder="Введите код" />
+                <span class="text-danger" id="confirm-error"></span>
+            </div>
+
+            <div class="form-btn confirm-btn" id="send-confirm-code">Подтвердить</div>
+        </div>
+    </div>
+    <div class="overlay" id="confirm-overlay"></div>
+</div>

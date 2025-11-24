@@ -218,11 +218,15 @@
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[12.0.1, )"
             },
             "GoogleApi": {
               "target": "Package",
               "version": "[5.8.11, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.14.1, )"
             }
           },
           "imports": [

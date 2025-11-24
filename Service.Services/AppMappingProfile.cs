@@ -17,6 +17,13 @@ namespace Service.Services
             CreateMap<User, UserDb>().ReverseMap();
             CreateMap<User, LoginViewModel>().ReverseMap();
             CreateMap<User, RegisterViewModel>().ReverseMap();
+
+            // Новая строка для 18 главы
+            CreateMap<RegisterViewModel, ConfirmEmailViewModel>()
+                .ForMember(dest => dest.UserName, opt => opt.MapFrom(src => src.Username))
+                .ForMember(dest => dest.UserEmail, opt => opt.MapFrom(src => src.Email))
+                .ForMember(dest => dest.UserPassword, opt => opt.MapFrom(src => src.Password))
+                .ReverseMap();
         }
     }
 }
