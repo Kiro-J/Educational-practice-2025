@@ -1,7 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Mvc;
 using Service.Domain.Response;
 using Service.Domain.ViewModels.LoginAndRegistration;
 using Service.Services.Interfaces;
+using System.Security.Claims;
 
 namespace Service.Controllers
 {
@@ -14,51 +17,36 @@ namespace Service.Controllers
             _accountService = accountService;
         }
 
-        // Регистрация (GET) - перенаправляем на главную, так как форма в модальном окне
+        // GET методы оставляем без изменений, они просто редиректят
         [HttpGet]
-        public IActionResult Register()
-        {
-            return RedirectToAction("Index", "Home");
-        }
+        public IActionResult Register() => RedirectToAction("Index", "Home");
+
+        [HttpGet]
+        public IActionResult Login() => RedirectToAction("Index", "Home");
 
         [HttpPost]
         public async Task<JsonResult> Register([FromBody] RegisterViewModel model)
         {
             if (ModelState.IsValid)
             {
-                try
-                {
-                    // Используем Username как логин
-                    var result = await _accountService.Register(model.Username, model.Password, model.Email);
+                // Вызываем обновленный метод Register, который возвращает ClaimsIdentity
+                var response = await _accountService.Register(model.Username, model.Password, model.Email);
 
-                    if (result.StatusCode == RoleStatusCode.OK)
-                    {
-                        return Json(new { success = true, message = "Регистрация успешна!" });
-                    }
-                    else
-                    {
-                        return Json(new { success = false, errors = new[] { result.Description } });
-                    }
-                }
-                catch (Exception ex)
+                if (response.StatusCode == RoleStatusCode.OK)
                 {
-                    return Json(new { success = false, errors = new[] { ex.Message } });
+                    // Устанавливаем куки аутентификации
+                    await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,
+                        new ClaimsPrincipal(response.Data));
+
+                    return Json(new { success = true, message = "Регистрация успешна!" });
                 }
+                return Json(new { success = false, errors = new[] { response.Description } });
             }
 
-            var errors = ModelState.Values
-                .SelectMany(v => v.Errors)
-                .Select(e => e.ErrorMessage)
-                .ToArray();
-
+            // Обработка ошибок валидации
+            var errors = ModelState.Values.SelectMany(v => v.Errors)
+                .Select(e => e.ErrorMessage).ToArray();
             return Json(new { success = false, errors = errors });
-        }
-
-        // Вход (GET) - перенаправляем на главную
-        [HttpGet]
-        public IActionResult Login()
-        {
-            return RedirectToAction("Index", "Home");
         }
 
         [HttpPost]
@@ -66,40 +54,29 @@ namespace Service.Controllers
         {
             if (ModelState.IsValid)
             {
-                try
-                {
-                    var result = await _accountService.Login(model.Login, model.Password);
+                var response = await _accountService.Login(model.Login, model.Password);
 
-                    if (result.StatusCode == RoleStatusCode.OK)
-                    {
-                        HttpContext.Session.SetString("AuthToken", result.Data);
-                        return Json(new { success = true, message = "Вход выполнен успешно!" });
-                    }
-                    else
-                    {
-                        return Json(new { success = false, errors = new[] { result.Description } });
-                    }
-                }
-                catch (Exception ex)
+                if (response.StatusCode == RoleStatusCode.OK)
                 {
-                    return Json(new { success = false, errors = new[] { ex.Message } });
+                    // Устанавливаем куки аутентификации
+                    await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,
+                        new ClaimsPrincipal(response.Data));
+
+                    return Json(new { success = true, message = "Вход выполнен успешно!" });
                 }
+                return Json(new { success = false, errors = new[] { response.Description } });
             }
 
-            var errors = ModelState.Values
-                .SelectMany(v => v.Errors)
-                .Select(e => e.ErrorMessage)
-                .ToArray();
-
+            var errors = ModelState.Values.SelectMany(v => v.Errors)
+                .Select(e => e.ErrorMessage).ToArray();
             return Json(new { success = false, errors = errors });
         }
 
-        // Выход
         [HttpPost]
-        public IActionResult Logout()
+        public async Task<IActionResult> Logout()
         {
-            HttpContext.Session.Remove("AuthToken");
-            // ВАЖНО: Перенаправляем на главную страницу
+            // Удаляем куки аутентификации
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
             return RedirectToAction("Index", "Home");
         }
     }

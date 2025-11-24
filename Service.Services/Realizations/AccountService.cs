@@ -1,9 +1,11 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using Service.DAL;
+using Service.Domain.Helpers; // Подключаем хешер
 using Service.Domain.ModelsDb;
 using Service.Domain.Response;
 using Service.Services.Interfaces;
+using System.Security.Claims; // Подключаем Claims
 
 namespace Service.Services.Realizations
 {
@@ -18,119 +20,105 @@ namespace Service.Services.Realizations
             _mapper = mapper;
         }
 
-        public async Task<BaseResponse<string>> Login(string login, string password)
+        public async Task<BaseResponse<ClaimsIdentity>> Register(string login, string password, string email)
         {
             try
             {
-                // Ищем пользователя по логину или email
-                var user = await _context.Users
-                    .FirstOrDefaultAsync(u => u.Login == login || u.Email == login);
-
-                if (user == null)
+                var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == email || x.Login == login);
+                if (user != null)
                 {
-                    return new BaseResponse<string>
+                    return new BaseResponse<ClaimsIdentity>()
                     {
-                        Description = "Пользователь не найден",
-                        StatusCode = RoleStatusCode.NotFound,
-                        Data = null
+                        Description = "Пользователь с таким логином или почтой уже есть",
                     };
                 }
 
-                // Проверяем пароль
-                if (user.Password != password)
-                {
-                    return new BaseResponse<string>
-                    {
-                        Description = "Неверный пароль",
-                        StatusCode = RoleStatusCode.BadRequest,
-                        Data = null
-                    };
-                }
-
-                // Генерируем токен
-                var token = GenerateToken(user);
-
-                return new BaseResponse<string>
-                {
-                    Description = "Успешный вход",
-                    StatusCode = RoleStatusCode.OK,
-                    Data = token
-                };
-            }
-            catch (Exception ex)
-            {
-                return new BaseResponse<string>
-                {
-                    Description = $"Ошибка: {ex.Message}",
-                    StatusCode = RoleStatusCode.InternalServerError,
-                    Data = null
-                };
-            }
-        }
-
-        public async Task<BaseResponse<bool>> Register(string login, string password, string email)
-        {
-            try
-            {
-                // Проверяем, существует ли пользователь
-                var existingUser = await _context.Users
-                    .FirstOrDefaultAsync(u => u.Login == login || u.Email == email);
-
-                if (existingUser != null)
-                {
-                    return new BaseResponse<bool>
-                    {
-                        Description = "Пользователь с таким логином или email уже существует",
-                        StatusCode = RoleStatusCode.BadRequest,
-                        Data = false
-                    };
-                }
-
-                // Создаем нового пользователя
-                var newUser = new UserDb
+                var newUser = new UserDb()
                 {
                     Id = Guid.NewGuid(),
                     Login = login,
-                    Password = password,
                     Email = email,
-                    Role = 0,
-                    CreatedAt = DateTime.UtcNow
+                    // ИСПРАВЛЕНИЕ: Добавлено явное приведение (int)
+                    Role = (int)Service.Domain.Enums.UserRole.User, // Роль по умолчанию
+                    // Хешируем пароль перед сохранением
+                    Password = HashPasswordHelper.HashPassword(password),
+                    CreatedAt = DateTime.UtcNow,
                 };
 
-                // Добавляем в базу данных
                 await _context.Users.AddAsync(newUser);
                 await _context.SaveChangesAsync();
 
-                return new BaseResponse<bool>
+                // Формируем ClaimsIdentity для автоматического входа после регистрации
+                var result = Authenticate(newUser);
+
+                return new BaseResponse<ClaimsIdentity>()
                 {
-                    Description = "Пользователь успешно зарегистрирован",
-                    StatusCode = RoleStatusCode.OK,
-                    Data = true
-                };
-            }
-            catch (DbUpdateException dbEx)
-            {
-                return new BaseResponse<bool>
-                {
-                    Description = $"Ошибка базы данных: {dbEx.InnerException?.Message ?? dbEx.Message}",
-                    StatusCode = RoleStatusCode.InternalServerError,
-                    Data = false
+                    Data = result,
+                    Description = "Объект добавился",
+                    StatusCode = RoleStatusCode.OK
                 };
             }
             catch (Exception ex)
             {
-                return new BaseResponse<bool>
+                return new BaseResponse<ClaimsIdentity>()
                 {
-                    Description = $"Ошибка регистрации: {ex.Message}",
-                    StatusCode = RoleStatusCode.InternalServerError,
-                    Data = false
+                    Description = ex.Message,
+                    StatusCode = RoleStatusCode.InternalServerError
                 };
             }
         }
 
-        private string GenerateToken(UserDb user)
+        public async Task<BaseResponse<ClaimsIdentity>> Login(string login, string password)
         {
-            return $"token-{user.Id}-{DateTime.UtcNow.Ticks}";
+            try
+            {
+                var user = await _context.Users.FirstOrDefaultAsync(x => x.Login == login || x.Email == login);
+
+                if (user == null)
+                {
+                    return new BaseResponse<ClaimsIdentity>()
+                    {
+                        Description = "Пользователь не найден"
+                    };
+                }
+
+                // Сравниваем хеш введенного пароля с хешем в БД
+                if (user.Password != HashPasswordHelper.HashPassword(password))
+                {
+                    return new BaseResponse<ClaimsIdentity>()
+                    {
+                        Description = "Неверный пароль или логин"
+                    };
+                }
+
+                var result = Authenticate(user);
+
+                return new BaseResponse<ClaimsIdentity>()
+                {
+                    Data = result,
+                    StatusCode = RoleStatusCode.OK
+                };
+            }
+            catch (Exception ex)
+            {
+                return new BaseResponse<ClaimsIdentity>()
+                {
+                    Description = ex.Message,
+                    StatusCode = RoleStatusCode.InternalServerError
+                };
+            }
+        }
+
+        // Вспомогательный метод для создания ClaimsIdentity
+        private ClaimsIdentity Authenticate(UserDb user)
+        {
+            var claims = new List<Claim>
+            {
+                new Claim(ClaimsIdentity.DefaultNameClaimType, user.Login),
+                new Claim(ClaimsIdentity.DefaultRoleClaimType, user.Role.ToString())
+            };
+            return new ClaimsIdentity(claims, "ApplicationCookie",
+                ClaimsIdentity.DefaultNameClaimType, ClaimsIdentity.DefaultRoleClaimType);
         }
     }
 }

@@ -3,6 +3,8 @@ using Service;
 using Service.DAL;
 using Service.Services.Interfaces;
 using Service.Services.Realizations;
+using Microsoft.AspNetCore.Authentication.Cookies; // Не забудьте этот using
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -32,7 +34,29 @@ builder.Services.AddScoped<IAccountService, AccountService>();
 
 builder.Services.InitializeRepositoryServices();
 builder.Services.InitializeServices();
+
+
+
+
+// Добавляем аутентификацию через Cookie
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.LoginPath = new Microsoft.AspNetCore.Http.PathString("/Account/Login");
+        options.AccessDeniedPath = new Microsoft.AspNetCore.Http.PathString("/Account/Login");
+    });
+
+
 var app = builder.Build();
+
+
+
+
+
+
+
+
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -57,6 +81,7 @@ app.UseRouting();
 app.UseSession();
 
 app.UseAuthorization();
+app.UseAuthentication();
 
 app.MapControllerRoute(
     name: "default",
