@@ -1,12 +1,13 @@
-﻿using System.Security.Claims;
-using Service.Domain.Response;
+﻿using Service.Domain.Response;
+using Service.Domain.ViewModels.LoginAndRegistration;
+using System.Security.Claims;
 
 namespace Service.Services.Interfaces
 {
     public interface IAccountService
     {
-        // Возвращаем ClaimsIdentity для создания куки авторизации
-        Task<BaseResponse<ClaimsIdentity>> Register(string login, string password, string email);
-        Task<BaseResponse<ClaimsIdentity>> Login(string login, string password);
+        // Методы теперь принимают ViewModels для удобной валидации
+        Task<BaseResponse<ClaimsIdentity>> Register(RegisterViewModel model);
+        Task<BaseResponse<ClaimsIdentity>> Login(LoginViewModel model);
     }
 }

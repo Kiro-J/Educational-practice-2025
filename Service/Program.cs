@@ -1,10 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Service;
 using Service.DAL;
-using Service.Services.Interfaces;
-using Service.Services.Realizations;
-using Microsoft.AspNetCore.Authentication.Cookies; // Не забудьте этот using
-
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,14 +26,10 @@ builder.Services.AddHttpContextAccessor();
 // Add AutoMapper
 builder.Services.AddAutoMapper(typeof(Program));
 
-// Add custom services
-builder.Services.AddScoped<IAccountService, AccountService>();
-
-builder.Services.InitializeRepositoryServices();
-builder.Services.InitializeServices();
-
-
-
+// --- ИСПРАВЛЕНИЕ: Вызов метода из Initializer.cs ---
+// Этот метод регистрирует AccountService, UserStorage и валидаторы
+builder.Services.InitializeRepositories();
+// ---------------------------------------------------
 
 // Добавляем аутентификацию через Cookie
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
@@ -46,17 +39,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         options.AccessDeniedPath = new Microsoft.AspNetCore.Http.PathString("/Account/Login");
     });
 
-
 var app = builder.Build();
-
-
-
-
-
-
-
-
-
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -77,11 +60,13 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-// ВАЖНО: Session должен быть до Authorization и MapControllerRoute
+// ВАЖНО: Session должен быть до Authorization
 app.UseSession();
 
-app.UseAuthorization();
+// --- ИСПРАВЛЕНИЕ: Сначала Аутентификация, потом Авторизация ---
 app.UseAuthentication();
+app.UseAuthorization();
+// --------------------------------------------------------------
 
 app.MapControllerRoute(
     name: "default",

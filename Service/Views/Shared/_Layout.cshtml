@@ -22,15 +22,14 @@
             </div>
 
             <div class="auth-buttons">
-                @{
-                    var authToken = HttpContextAccessor.HttpContext?.Session.GetString("AuthToken");
-                }
-                @if (!string.IsNullOrEmpty(authToken))
+                @if (User.Identity.IsAuthenticated)
                 {
-                    <form asp-controller="Account" asp-action="Logout" method="post" style="display:inline-flex; align-items:center;">
-                        @* Используем тот же класс btn-login *@
-                        <button type="submit" class="btn-login">Выход</button>
-                    </form>
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <span style="font-weight: bold; color: #333;">@User.Identity.Name</span>
+                        <form asp-controller="Account" asp-action="Logout" method="post" style="display:inline-flex; align-items:center;">
+                            <button type="submit" class="btn-login">Выход</button>
+                        </form>
+                    </div>
                 }
                 else
                 {
@@ -47,10 +46,11 @@
                 <a asp-controller="Home" asp-action="Functions">Функции</a>
                 <a asp-controller="Home" asp-action="Contacts">Контакты</a>
 
-                @if (!string.IsNullOrEmpty(authToken))
+                @if (User.Identity.IsAuthenticated)
                 {
+                    <div style="padding: 10px 20px; color: #333; font-weight: bold;">@User.Identity.Name</div>
                     <form asp-controller="Account" asp-action="Logout" method="post" style="width: 100%;">
-                        <button type="submit" class="btn-login mobile-login" style="width: 100%; text-align: left; padding-left: 0;">Выход</button>
+                        <button type="submit" class="btn-login mobile-login" style="width: 100%; text-align: left; padding-left: 20px;">Выход</button>
                     </form>
                 }
                 else

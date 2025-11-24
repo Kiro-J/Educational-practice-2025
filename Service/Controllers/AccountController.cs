@@ -17,7 +17,6 @@ namespace Service.Controllers
             _accountService = accountService;
         }
 
-        // GET методы оставляем без изменений, они просто редиректят
         [HttpGet]
         public IActionResult Register() => RedirectToAction("Index", "Home");
 
@@ -27,56 +26,43 @@ namespace Service.Controllers
         [HttpPost]
         public async Task<JsonResult> Register([FromBody] RegisterViewModel model)
         {
-            if (ModelState.IsValid)
+            // Передаем модель целиком в сервис
+            var response = await _accountService.Register(model);
+
+            if (response.StatusCode == RoleStatusCode.OK)
             {
-                // Вызываем обновленный метод Register, который возвращает ClaimsIdentity
-                var response = await _accountService.Register(model.Username, model.Password, model.Email);
+                await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,
+                    new ClaimsPrincipal(response.Data));
 
-                if (response.StatusCode == RoleStatusCode.OK)
-                {
-                    // Устанавливаем куки аутентификации
-                    await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,
-                        new ClaimsPrincipal(response.Data));
-
-                    return Json(new { success = true, message = "Регистрация успешна!" });
-                }
-                return Json(new { success = false, errors = new[] { response.Description } });
+                return Json(new { success = true, message = "Регистрация успешна!" });
             }
 
-            // Обработка ошибок валидации
-            var errors = ModelState.Values.SelectMany(v => v.Errors)
-                .Select(e => e.ErrorMessage).ToArray();
-            return Json(new { success = false, errors = errors });
+            // Возвращаем ошибку валидации или логики, пришедшую из сервиса
+            return Json(new { success = false, errors = new[] { response.Description } });
         }
 
         [HttpPost]
         public async Task<JsonResult> Login([FromBody] LoginViewModel model)
         {
-            if (ModelState.IsValid)
+            // Передаем модель целиком в сервис
+            var response = await _accountService.Login(model);
+
+            if (response.StatusCode == RoleStatusCode.OK)
             {
-                var response = await _accountService.Login(model.Login, model.Password);
+                await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,
+                    new ClaimsPrincipal(response.Data));
 
-                if (response.StatusCode == RoleStatusCode.OK)
-                {
-                    // Устанавливаем куки аутентификации
-                    await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,
-                        new ClaimsPrincipal(response.Data));
-
-                    return Json(new { success = true, message = "Вход выполнен успешно!" });
-                }
-                return Json(new { success = false, errors = new[] { response.Description } });
+                return Json(new { success = true, message = "Вход выполнен успешно!" });
             }
 
-            var errors = ModelState.Values.SelectMany(v => v.Errors)
-                .Select(e => e.ErrorMessage).ToArray();
-            return Json(new { success = false, errors = errors });
+            return Json(new { success = false, errors = new[] { response.Description } });
         }
 
         [HttpPost]
         public async Task<IActionResult> Logout()
         {
             // Удаляем куки аутентификации
-            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            await Microsoft.AspNetCore.Authentication.AuthenticationHttpContextExtensions.SignOutAsync(HttpContext, Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationDefaults.AuthenticationScheme);
             return RedirectToAction("Index", "Home");
         }
     }

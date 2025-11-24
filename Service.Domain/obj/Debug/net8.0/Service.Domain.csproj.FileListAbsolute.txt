@@ -50,3 +50,4 @@ C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice
 C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.Domain\obj\Debug\net8.0\refint\Service.Domain.dll
 C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.Domain\obj\Debug\net8.0\Service.Domain.pdb
 C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.Domain\obj\Debug\net8.0\ref\Service.Domain.dll
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service.Domain\obj\Debug\net8.0\Service.Domain.csproj.AssemblyReference.cache

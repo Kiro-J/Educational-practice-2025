@@ -1,11 +1,13 @@
 ﻿using AutoMapper;
+using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 using Service.DAL;
-using Service.Domain.Helpers; // Подключаем хешер
+using Service.Domain.Helpers;
 using Service.Domain.ModelsDb;
 using Service.Domain.Response;
+using Service.Domain.ViewModels.LoginAndRegistration;
 using Service.Services.Interfaces;
-using System.Security.Claims; // Подключаем Claims
+using System.Security.Claims;
 
 namespace Service.Services.Realizations
 {
@@ -13,48 +15,67 @@ namespace Service.Services.Realizations
     {
         private readonly ApplicationDbContext _context;
         private readonly IMapper _mapper;
+        private readonly IValidator<RegisterViewModel> _registerValidator;
+        private readonly IValidator<LoginViewModel> _loginValidator;
 
-        public AccountService(ApplicationDbContext context, IMapper mapper)
+        public AccountService(
+            ApplicationDbContext context,
+            IMapper mapper,
+            IValidator<RegisterViewModel> registerValidator,
+            IValidator<LoginViewModel> loginValidator)
         {
             _context = context;
             _mapper = mapper;
+            _registerValidator = registerValidator;
+            _loginValidator = loginValidator;
         }
 
-        public async Task<BaseResponse<ClaimsIdentity>> Register(string login, string password, string email)
+        public async Task<BaseResponse<ClaimsIdentity>> Register(RegisterViewModel model)
         {
             try
             {
-                var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == email || x.Login == login);
+                // 1. Проверка валидности данных с помощью FluentValidation
+                var validationResult = await _registerValidator.ValidateAsync(model);
+                if (!validationResult.IsValid)
+                {
+                    var errors = string.Join(", ", validationResult.Errors.Select(e => e.ErrorMessage));
+                    return new BaseResponse<ClaimsIdentity>()
+                    {
+                        Description = errors,
+                        StatusCode = RoleStatusCode.BadRequest
+                    };
+                }
+
+                // 2. Стандартная проверка на существование пользователя
+                var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == model.Email || x.Login == model.Username);
                 if (user != null)
                 {
                     return new BaseResponse<ClaimsIdentity>()
                     {
                         Description = "Пользователь с таким логином или почтой уже есть",
+                        StatusCode = RoleStatusCode.BadRequest
                     };
                 }
 
                 var newUser = new UserDb()
                 {
                     Id = Guid.NewGuid(),
-                    Login = login,
-                    Email = email,
-                    // ИСПРАВЛЕНИЕ: Добавлено явное приведение (int)
-                    Role = (int)Service.Domain.Enums.UserRole.User, // Роль по умолчанию
-                    // Хешируем пароль перед сохранением
-                    Password = HashPasswordHelper.HashPassword(password),
+                    Login = model.Username,
+                    Email = model.Email,
+                    Role = (int)Service.Domain.Enums.UserRole.User,
+                    Password = HashPasswordHelper.HashPassword(model.Password),
                     CreatedAt = DateTime.UtcNow,
                 };
 
                 await _context.Users.AddAsync(newUser);
                 await _context.SaveChangesAsync();
 
-                // Формируем ClaimsIdentity для автоматического входа после регистрации
                 var result = Authenticate(newUser);
 
                 return new BaseResponse<ClaimsIdentity>()
                 {
                     Data = result,
-                    Description = "Объект добавился",
+                    Description = "Пользователь успешно зарегистрирован",
                     StatusCode = RoleStatusCode.OK
                 };
             }
@@ -68,26 +89,39 @@ namespace Service.Services.Realizations
             }
         }
 
-        public async Task<BaseResponse<ClaimsIdentity>> Login(string login, string password)
+        public async Task<BaseResponse<ClaimsIdentity>> Login(LoginViewModel model)
         {
             try
             {
-                var user = await _context.Users.FirstOrDefaultAsync(x => x.Login == login || x.Email == login);
+                // 1. Проверка валидности данных
+                var validationResult = await _loginValidator.ValidateAsync(model);
+                if (!validationResult.IsValid)
+                {
+                    var errors = string.Join(", ", validationResult.Errors.Select(e => e.ErrorMessage));
+                    return new BaseResponse<ClaimsIdentity>()
+                    {
+                        Description = errors,
+                        StatusCode = RoleStatusCode.BadRequest
+                    };
+                }
+
+                var user = await _context.Users.FirstOrDefaultAsync(x => x.Login == model.Login || x.Email == model.Login);
 
                 if (user == null)
                 {
                     return new BaseResponse<ClaimsIdentity>()
                     {
-                        Description = "Пользователь не найден"
+                        Description = "Пользователь не найден",
+                        StatusCode = RoleStatusCode.NotFound
                     };
                 }
 
-                // Сравниваем хеш введенного пароля с хешем в БД
-                if (user.Password != HashPasswordHelper.HashPassword(password))
+                if (user.Password != HashPasswordHelper.HashPassword(model.Password))
                 {
                     return new BaseResponse<ClaimsIdentity>()
                     {
-                        Description = "Неверный пароль или логин"
+                        Description = "Неверный пароль или логин",
+                        StatusCode = RoleStatusCode.BadRequest
                     };
                 }
 
@@ -96,6 +130,7 @@ namespace Service.Services.Realizations
                 return new BaseResponse<ClaimsIdentity>()
                 {
                     Data = result,
+                    Description = "Успешный вход",
                     StatusCode = RoleStatusCode.OK
                 };
             }
@@ -109,7 +144,6 @@ namespace Service.Services.Realizations
             }
         }
 
-        // Вспомогательный метод для создания ClaimsIdentity
         private ClaimsIdentity Authenticate(UserDb user)
         {
             var claims = new List<Claim>

@@ -313,3 +313,4 @@ C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice
 C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service\obj\Debug\net8.0\Service.pdb
 C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service\obj\Debug\net8.0\Service.genruntimeconfig.cache
 C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service\obj\Debug\net8.0\ref\Service.dll
+C:\Users\Николай\Documents\Educational-practice-2025\Educational-practice-2025\Service\bin\Debug\net8.0\FluentValidation.dll
